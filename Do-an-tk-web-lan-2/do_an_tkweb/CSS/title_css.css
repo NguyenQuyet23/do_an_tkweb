@@ -1,0 +1,645 @@
+
+.titled{
+height: 60px;
+width: 99.99%;
+background-color: rgba(29, 81, 250, 0.918);
+font-family: Arial, Helvetica, sans-serif;
+margin-top: -10px;
+left: 0px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+position: fixed;
+z-index: 9;
+}
+
+
+/*-----------------------------------------------------------------------*/
+.introduction{
+    height: 60px;
+    width: 100px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 290px;
+    color: rgb(132, 202, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    text-align: center;
+    transition: color 0.5s;
+    border-radius: 0px;
+    z-index: 9;
+}
+.introduction::before{
+    content: "";
+    position: absolute;
+    border-radius: 0px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgb(46, 161, 255) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.introduction:hover{
+    color: rgb(255, 255, 255);
+}
+.introduction:hover::before{
+    transform: scaleY(1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+.tintuc1{
+    top: 58px;
+    margin-left: 290px;
+    position:absolute;
+    position: fixed;
+    background-color:rgba(46, 161, 255, 0.534) ;
+    height: 60px;
+    width: 100px;
+    border-radius: 0px;
+    float: left;
+    transition: color 0.5s;
+    z-index: 9;
+    color: rgba(255, 145, 111, 0.904);
+    animation: movetop 0.35s linear;
+}
+.tintuc1::before{
+    
+    position: absolute;
+    border-radius: 0px;
+    height: 60px;
+    width: 100px;
+   
+    background:rgba(46, 161, 255, 0.521) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.tintuc1:hover{
+    color: rgb(255, 255, 255);
+}
+.tintuc1:hover::before{
+    transform: scaleY(1);
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+.introduction2{
+    height: 60px;
+    width: 220px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 440px;
+    color: rgb(132, 202, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    text-align: center;
+    transition: color 0.5s;
+    border-radius: 0px;
+    z-index: 9;
+}
+.introduction2::before{
+    content: "";
+    position: absolute;
+    border-radius: 0px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgb(46, 161, 255) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.introduction2:hover{
+    color: rgb(255, 255, 255);
+}
+.introduction2:hover::before{
+    transform: scaleY(1);
+}
+
+/*-----------------------------------------------------------------------*/
+.txt{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 0.44cm;
+}
+.txt_lk{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.tintuc1::before{
+    transform: scaleY(0);
+}
+.txt_lk:visited{
+    color: rgba(255, 145, 111, 0.904);
+}
+.kqht1:hover .txt_lk:nth-child(1){
+    color: aliceblue;
+}
+.txt_lk:hover::before{
+    transform: scaleY(1);
+}
+
+.txt_lk_1{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.introduction3::before{
+    transform: scaleY(0);
+}
+.txt_lk_1:visited{
+    color: rgb(132, 202, 248);
+}
+.introduction3:hover .txt_lk_1:nth-child(1){
+    color: rgb(255, 255, 255);
+}
+.txt_lk_1:hover::before{
+    transform: scaleY(1);
+}
+
+.txt_lk_2{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.introduction4::before{
+    transform: scaleY(0);
+}
+.txt_lk_2:visited{
+    color: rgb(132, 202, 248);
+}
+.introduction4:hover .txt_lk_2:nth-child(1){
+    color: rgb(255, 255, 255);
+}
+.txt_lk_2:hover::before{
+    transform: scaleY(1);
+}
+
+.txt_lk_3{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: rgba(255, 145, 111, 0.904);
+}
+.lienhe1::before{
+    transform: scaleY(0);
+}
+.txt_lk_3:visited{
+    color: rgba(255, 145, 111, 0.904);
+}
+.lienhe1:hover .txt_lk_3:nth-child(1){
+    color: rgb(255, 255, 255);
+}
+.txt_lk_3:hover::before{
+    transform: scaleY(1);
+}
+
+
+.txt_lk_4{
+    float: left;
+    margin-top: 23px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: rgba(255, 145, 111, 0.904);
+}
+.tuyendung1::before{
+    transform: scaleY(0);
+}
+.txt_lk_4:visited{
+    color: rgba(255, 145, 111, 0.904);
+}
+.tuyendung1:hover .txt_lk_4:nth-child(1){
+    color: rgb(255, 255, 255);
+}
+.txt_lk_4:hover::before{
+    transform: scaleY(1);
+}
+
+
+
+
+.hstb1{
+    float: left;
+    position: absolute;
+    background-color:rgba(46, 161, 255, 0.534) ;
+    height: 60px;
+    width: 100%;
+    border-radius: 0px;
+    transition: color 0.5s;
+    z-index: 9;
+    color: rgba(255, 145, 111, 0.904);
+    margin-left: 0px;
+}
+.hstb1::before{
+    
+    position: absolute;
+    border-radius: 0px;
+    height: 60px;
+    width: 220px;
+   
+    background:rgba(46, 161, 255, 0.521) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.hstb1:hover{
+    color: rgb(255, 255, 255);
+}
+.hstb1:hover::before{
+    transform: scaleY(1);
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+.kqht1{
+    margin-top: 60px;
+    position: absolute;
+    background-color:rgba(46, 161, 255, 0.534) ;
+    height: 60px;
+    width: 100%;
+    border-radius: 0px;
+    float: left;
+    transition: color 0.5s;
+    z-index: 9;
+    color: rgba(255, 145, 111, 0.904);
+}
+.kqht1::before{
+    
+    position: absolute;
+    border-radius: 0px;
+    height: 60px;
+    width: 220px;
+    color: rgba(255, 145, 111, 0.904);
+    background:rgba(46, 161, 255, 0.521) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.kqht1:hover{
+    color: rgb(255, 255, 255);
+}
+.kqht1:hover::before{
+    transform: scaleY(1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+.introduction3{
+    height: 60px;
+    width: 120px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 710px;
+    color: rgb(132, 202, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    text-align: center;
+    transition: color 0.5s;
+    border-radius: 0px;
+    z-index: 9;
+}
+.introduction3::before{
+    content: "";
+    position: absolute;
+    border-radius: 0px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgb(46, 161, 255) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.introduction3:hover{
+    color: rgb(255, 255, 255);
+}
+.introduction3:hover::before{
+    transform: scaleY(1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+.tuyendung1{
+    top: 58px;
+    margin-left: 710px;
+    position: fixed;
+    background-color:rgba(46, 161, 255, 0.534) ;
+    height: 60px;
+    width: 120px;
+    border-radius: 0px;
+    float: left;
+    transition: color 0.5s;
+    z-index: 9;
+    color: rgba(255, 145, 111, 0.904);
+    animation:  movetop 0.35s linear;
+}
+.tuyendung1::before{
+    
+    position: absolute;
+    border-radius: 0px;
+    height: 60px;
+    width: 120px;
+   
+    background:rgba(46, 161, 255, 0.521) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.tuyendung1:hover{
+    color: rgb(255, 255, 255);
+}
+.tuyendung1:hover::before{
+    transform: scaleY(1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+.introduction4{
+    height: 60px;
+    width: 150px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 880px;
+    color: rgb(132, 202, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    text-align: center;
+    transition: color 0.5s;
+    border-radius: 0px;
+    z-index: 9;
+
+}
+
+.introduction4::before{
+    content: "";
+    position: absolute;
+    border-radius: 0px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgb(46, 161, 255) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.introduction4:hover{
+    color: rgb(255, 255, 255);
+}
+.introduction4:hover::before{
+    transform: scaleY(1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+.lienhe1{
+    top: 58px;
+    margin-left: 880px;
+    position: fixed;
+    background-color:rgba(46, 161, 255, 0.534) ;
+    height: 60px;
+    width: 150px;
+    border-radius: 0px;
+    float: left;
+    transition: color 0.5s;
+    z-index: 9;
+    color: rgba(255, 145, 111, 0.904);
+    animation:  movetop 0.35s linear;
+}
+.lienhe1::before{
+    
+    position: absolute;
+    border-radius: 0px;
+    height: 60px;
+    width: 120px;
+   
+    background:rgba(46, 161, 255, 0.521) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+}
+.lienhe1:hover{
+    color: rgb(255, 255, 255);
+}
+.lienhe1:hover::before{
+    transform: scaleY(1);
+}
+
+/*----------------------------------------------------------------------*/
+.back_ground{
+    background-color: rgba(63, 63, 63, 0.603);
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 101.3%;
+    height: 101%;
+    position: fixed;
+    z-index: 10;
+}
+
+/*----------------------------------------------------------------------*/
+.muc_gioi_thieu{
+    scroll-behavior: smooth;
+    background-color: aliceblue;
+    width: 1300px;
+    height: 620px;
+    border-radius: 8px; 
+    margin-left: 15px;
+    margin-top: 30px;
+    float: left;
+    position:fixed;
+    z-index: 11;
+    overflow-y: scroll;
+    overflow-x: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.muc_gioi_thieu::-webkit-scrollbar{
+    width: 12px;  /* Độ rộng thanh cuộn*/
+}
+.muc_gioi_thieu::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);/*Màu nền thanh cuộn*/
+}
+.muc_gioi_thieu::-webkit-scrollbar-thumb {   
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.25, rgba(22, 56, 245, 0.733)),
+        color-stop(0.50, rgba(65, 123, 247, 0.801)),
+        color-stop(0.75, rgba(110, 165, 248, 0.781))
+    );/*   Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px;       /* Bo góc scroll thumb */
+    border: 2px solid #ccc;  /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+.muc_gioi_thieu::-webkit-scrollbar-thumb:hover {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.25, rgba(55, 84, 247, 0.733)),
+        color-stop(0.50, rgba(128, 168, 255, 0.801)),
+        color-stop(0.75, rgba(158, 197, 255, 0.781))
+    ); /* Hiệu ứng di chuột đổi màu*/
+}
+
+
+.tk{
+    float: right;
+    width: 300px;
+    height: 60px;
+    margin-right: 70px;
+}
+
+.img_title{
+    margin-left:70px;margin-top:8px;float:left; height:45px; width:130px; background-color: white;border-radius: 3px;
+}
+
+
+/*responsive*/
+@media only screen and  (max-width:630px)
+{
+    .introduction, .introduction2,.introduction3,.introduction4,.tintuc1,.hstb1,.kqht1,.tuyendung1,.lienhe1{   
+        height: 0;
+        width: 0;
+    }
+    .txt,.txt_lk{
+        font-size: 0;
+    }
+    .titled{
+        width:900px ;
+        height: 60px;
+    }
+
+}
+
+@media only screen and  (min-width:630px) and (max-width:1050px)
+{
+    .introduction, .introduction2,.introduction3,.introduction4,.tintuc1,.hstb1,.kqht1,.tuyendung1,.lienhe1{   
+ 
+        width: 80px;
+    }
+    .txt,.txt_lk{
+        margin-top: 3px;
+        margin-left: 0px;
+        padding: 10px;
+        font-size: 0.2cm;
+    }
+
+    /*Giới thiệu*/
+    .introduction{
+        margin-top: -10px;
+        margin-left: 230px;
+    }
+    .tintuc1{
+        margin-top: 0px;
+        margin-left: 230px;
+    }
+    
+    /*Chương trình học tập*/
+    .introduction2{
+        width: 100px;
+        margin-top: -10px;
+        margin-left: 330px;
+    }
+    .hstbxkqht{
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 448px;
+    }
+
+
+    /*Tuyển sinh*/
+    .introduction3{
+        width: 70px;
+        margin-top: -10px;
+        margin-left: 450px;
+    }
+    .tuyendung1{
+        width: 70px;
+        margin-top: 50px;
+        margin-left: 450px;
+    }
+
+
+    /*Thăm dò ý kiến*/
+    .introduction4{
+        width: 100px;
+        margin-top: -10px;
+        margin-left: 530px;
+    }
+    .lienhe1{
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 530px;
+    }
+}
+.title_header{
+    height: 70px; 
+    width: 1288px;
+    border-radius: 8px; 
+    position: fixed;
+    float: left;
+    z-index: 7;
+    background-color: aliceblue;
+}
+
+.hstbxkqht{
+    float: left;
+    position: fixed;
+    height: 120px;
+    width: 220px;
+    top: 58px;
+    left: 448px;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0);
+    animation: movetop 0.35s linear;
+}
+@keyframes movetop{
+    0%{
+        top: 80px;
+        opacity: 0;
+    }
+    100%{
+        top: 58px;
+    }
+}
+

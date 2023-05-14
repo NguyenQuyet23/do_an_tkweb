@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet"  href="CSS/title_css.css" />
+    <link rel="stylesheet"  href="CSS/gioithieu_txt.css" />
+    <link rel="stylesheet"  href="CSS/tintuc_txt.css" />
+    <link rel="stylesheet"  href="CSS/thamdoykien.css" />
+    <link rel="stylesheet"  href="CSS/ctht.css" />
+    <link rel="stylesheet"  href="CSS/hstb.css" />
+    <link rel="stylesheet"  href="CSS/responsive.css" />
+    <link rel="stylesheet"  href="CSS/tuyensinh.css" />
+    <link rel="stylesheet"  href="CSS/hompage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
+    <link rel="stylesheet"  media="mediatype and|not|only (media feature)"href="resp.css" /> --> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link style="border-radius:5px ;" rel="shortcut icon" type="image/png" href ="anh/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The W2S-Thăm dò ý kiến</title>
+</head>
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(
+        function(){
+            $('#onl').mouseenter(
+                function(){
+                    $('#fad_id').show(0);
+                }
+            );
+            $('body').mouseleave(
+                function(){
+                    $('#fad_id').hide(0);
+                }
+            );
+            $('#off').mouseenter(
+                function(){
+                    $('#fad_id').hide(0);
+                }
+            );
+              
+            $('#sumbit_id').click(
+                function(){
+                    $('#sumbit_id--1').show(0);
+                    $('#sending').show(0);
+                    $('#OK').show(0);
+                }
+            );
+            $('#OK').click(
+                function(event){
+                    $('#sumbit_id--1').hide(0);
+                    $('#sending').hide(0);
+                    $('#OK').hide(0);
+
+                    $('#email_id1').show(0);
+                    $('#name_id1').show(0);
+                    $('#phone_id1').show(0);
+                    $('#diachi_id1').show(0);
+
+                    
+                    $('#email_id').val('');
+                    $('#name_id').val('');
+                    $('#phone_id').val('');
+                    $('#diachi_id').val('');
+                    $('#ghichu').val('');
+                }
+            );
+
+ 
+            $('#star-5').click(
+                function(){
+                    $('#tks').show(0);
+                }
+            );
+            $('#star-4').click(
+                function(){
+                    $('#tks').show(0);
+                }
+            );
+            $('#star-3').click(
+                function(){
+                    $('#tks').show(0);
+                }
+            );
+            $('#star-2').click(
+                function(){
+                    $('#tks').show(0);
+                }
+            );
+            $('#star-1').click(
+                function(){
+                    $('#tks').show(0);
+                }
+            );
+        
+            $('#email_id1').click(
+                function(){
+                    $('#email_id1').hide(0)
+                }
+            );
+                
+            $('#name_id1').click(
+                function(){
+                    $('#email_id1').hide(0);
+                    $('#name_id1').hide(0)
+                }
+            );
+
+            $('#phone_id1').click(
+                function(){
+                    $('#email_id1').hide(0);
+                    $('#name_id1').hide(0);
+                    $('#phone_id1').hide(0)
+                }
+            );
+
+            $('#diachi_id1').click(
+                function(){
+                    $('#email_id1').hide(0);
+                    $('#name_id1').hide(0);
+                    $('#phone_id1').hide(0);
+                    $('#diachi_id1').hide(0)
+                }
+            );
+            $('#ghichu').click(
+                function(){
+                    $('#email_id1').hide(0);
+                    $('#name_id1').hide(0);
+                    $('#phone_id1').hide(0);
+                    $('#diachi_id1').hide(0)
+                }
+            );
+        });
+
+	// nút chuyển tới đầu trang    
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 150;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+    var duration = 700;
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset){
+                $('#move2top').fadeIn(duration);
+                $('#tdyk-header-id').show();
+            }
+            else{
+                $('#move2top').fadeOut(duration);
+                $('#tdyk-header-id').fadeOut(1000);
+            }
+        });
+    });
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 750){
+                $('#rate').fadeIn(0);
+            }
+        });
+    });
+
+</script>
+<div  class="load_1" style="z-index: 13;" >
+    <div class="div1_1"></div>
+    <div class="div1_2"></div>
+    <div class="div1_3"></div>
+    <div class="div1_4"></div>
+    <div class="div1_5"></div>
+</div>
+<body style="scroll-behavior: smooth;">
+    <div hidden class="tdyk-header" id="tdyk-header-id">
+        <img class="tdyk-ic-hd" src="anh/icon.png">
+        <b class="tdyk-txt">Thăm dò ý kiến</b>
+    </div>
+
+    <div class="banner_div" id="top">
+        <img class="banner_img" src="http://static.ybox.vn/2018/5/0/1527416361229-thamdoyskiennhanvien.png">
+            <div class="banner_txt-1" style="opacity: 0.4;">
+                <b>The W2S<br> is good!</b>
+            </div>
+            <div class="banner_txt-2" >
+                <b>The best<br> school i've<br> ever seen!</b>
+            </div>
+            <div class="banner_txt-3" >
+                <b>🌟🌟🌟🌟🌟</b>
+            </div>
+        </img>
+    </div>
+
+    <a hidden id="point" style="opacity: 0;z-index: 1; position: absolute; margin-top: 10px;">12</a>
+    <div class="div_hp" id="move2top">
+        <a class="tc" id="hp" href="#top"><b>Chuyển tới đầu trang</b></a>      
+        <a href="#top"id="2hp" >
+            <img class="hp_img" src="https://90namdangbothanhhoa.vn/phi-tieu-thuyet-la-gi/imager_2_27096_700.jpg">
+        </a> 
+    </div>
+
+    <div  class="div_hp_ts">
+        <a class="tc" id="hp" href="Home_page.html" ><b>Trang chủ</b></a>      
+        <a href="Home_page.html"id="2hp" >
+            <img class="hp_img_ts" src="anh/icon.png">
+        </a> 
+    </div>
+
+    <div class="thamdoykien_div">
+        <b class="thamdoykien_txt">Tại sao chúng tôi cần thăm dò ý kiến ?</b>
+    </div>
+    <div class="loimodau_div">
+        <b class="loimodau_b">Lời mở đầu</b>
+        <p class="loimodau_txt">Để hoàn thiện hơn về mặt chất lượng, nhà trường đã quyết định sẽ sử dụng các ý kiến cá nhân của khách hàng để
+           giúp phụ huynh và các bạn học sinh trong trường có trải nghiệm tốt hơn và chuẩn ý mọi người hơn. Mong mọi người đóng 
+           góp ý kiến đến cho nhà trường, chân thành cảm ơn! 
+        </p>
+    </div>
+    <div class="cauhoi_div">
+        <b class="cauhoi_txt">Làm sao để gửi ý kiến đến nhà trường?</b>
+    </div>
+    <div class="onl_div_1" id="onl">
+        <b class="onl_txt_1">Bằng hình thức online</b>     
+        <a href="#point2" id="onl_1">
+            <b class="onl_txt_2">CLICK HERE</b>
+        </a> 
+    </div>
+    <div hidden class="fad" id="fad_id">
+        <a href="#point2" id="fad_id_2">
+            <i class="fas fa-arrow-down" id="fas_id"></i>
+        </a>
+    </div>
+    
+    <div class="off_div" id="off">
+        <b class="off_b">Gửi thư/ đến trực tiếp tại phòng tiếp nhận</b><br>
+        <a class="off_a">Địa chỉ: 12/3/21-Đường Phùng Khắc Khoan<br>P.Tân Hoà-TP.Biên Hoà-T.Đồng Nai</a>
+    </div>
+
+    <div class="thamdoykien_be_div">
+        <b class="thamdoykien_be_txt">TIN TỨC VỀ CÁC ĐỢT THĂM DÒ Ý KIẾN TRƯỚC ĐÂY</b>
+    </div>
+
+    <div class="tdyk_div_1" id="ttts_div_1_1">
+        <img class="tdyk_img_1"  src="anh/tuyen-sinh-2021.jpg">
+        <a class="tdyk_txt_1">Thông tin tuyển sinh đại học 2021</a>
+    </div>
+    <div class="tdyk_div_2" >
+        <img class="tdyk_img_2" src="anh/tuyen-sinh-2021.jpg">
+        <a class="tdyk_txt_2">Thông tin tuyển sinh hệ cao đẳng 2021</a>
+    </div>
+    <div class="tdyk_div_3" >
+        <img class="tdyk_img_3" style="background-color: white;" src="anh/icon.png">
+        <a class="tdyk_txt_3">Thông tin về đại học liên thông 2021</a>
+    </div>
+
+    <div class="thamdoykien_form_div">
+        <b class="thamdoykien_form_txt"id="point2">Form thăm dò ý kiến trực tuyến</b>
+    </div>
+    <div style="display: flex;">
+    <form  style="display: flex; flex-wrap: wrap;">
+        <input class="email" type="text" id="email_id" name="email_na" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="example@email.com" required required title="Nhập email vô bạn ơi. Nhớ có @ nha.">
+        <input class="name" type="text" id="name_id" name="text_na" placeholder="example: Phạm Quyết Thắng" required >
+        <input class="phone" type="tel" id="phone_id" name="number_na"  pattern="[0-9]{0,10}" placeholder="example: 078 **** 873" required title="Nhập dạng số là okela ha">
+        <input class="address" type="text" id="diachi_id" name="address_na" placeholder="example: 100/4 Biên Hoà" required title="Cho b* cái địa chỉ =))">
+        <textarea class="note" type="text" id="ghichu" name="note_na" placeholder="Nhập ý kiến của bạn của bạn vào đây*"></textarea> 
+    </form>
+    
+        <div class="email1" id="email_id1"> <a class="email_1">Nhập email của bạn vào đây*</a></div>
+        <div class="name1" id="name_id1"> <a class="email_1" >Nhập họ và tên của bạn vào đây*</a></div>
+        <div class="phone1" id="phone_id1"> <a class="email_1"> Nhập số điện thoại của bạn vào đây</a></div>
+        <div class="address1" id="diachi_id1"> <a class="email_1">Nhập địa chỉ của bạn vào đây*</a></div>
+    </div>
+
+    <div name="sumbit_div_na" value="OK"  type="submit" class="sumbit_div" id="sumbit_id">
+        <b class="sumbit_txt" > Gửi đi </b>
+    </div>
+    
+    
+    <div hidden class="sumbit_div--1" id="sumbit_id--1">
+        <b class="sumbit_txt--1" >
+            <i class="fas fa-plane"></i> 
+        </b>
+        <p class="wind1" style="color: rgb(201, 201, 201);">--</p>
+        <p class="wind2" style="color: rgb(255, 218, 176);">-</p>
+        <p class="wind3" style="color: rgb(252, 222, 168);">--</p>
+        <p class="wind4" style="color: rgb(255, 194, 194);">--</p>
+        <p class="wind5" style="color: rgb(240, 248, 177);">-</p>
+        <p class="wind6" style="color: rgb(222, 169, 252);">--</p>
+        <p class="wind7" style="color: rgb(172, 230, 248);">---</p>
+        <p class="wind8" style="color: rgb(252, 189, 238);">--</p>
+        <b class="sent">Đã gửi</b>
+        <div class="check_div">
+            <b class="check_txt">
+                <i class="fas fa-check"></i>
+            </b>
+        </div>
+    </div>
+    <div hidden class="sending_div" id="sending">
+        <b class="sending_txt">Đang gửi</b>
+    </div>
+    <div hidden class="OK_div" id="OK">
+        <b class="OK_txt">OK</b>
+    </div>
+
+    <div hidden class="rate_div" id="rate">
+        <b class="rate_txt">Chấm sao cho chúng tôi ^^!</b><br><br>
+            <form action=""class="sao">
+                <input hidden type="radio" name="star" id="star-5" class="star star-5" >
+                <label for="star-5" class="star star-5"></label>
+                <input hidden type="radio" name="star" id="star-4" class="star star-4" >
+                <label for="star-4" class="star star-4"></label>
+                <input hidden type="radio" name="star" id="star-3" class="star star-3" >
+                <label for="star-3" class="star star-3"></label>
+                <input hidden type="radio" name="star" id="star-2" class="star star-2" >
+                <label for="star-2" class="star star-2"></label>
+                <input hidden type="radio" name="star" id="star-1" class="star star-1" >
+                <label for="star-1" class="star star-1"></label>
+            </form>
+    </div>
+    <div hidden class="tks_div" id="tks">
+        <b class="tks_txt">Cảm ơn bạn đã chấm sao cho chúng tôi!</b>
+    </div>
+    <div class="foot_3" style="top: 1600px; width: 100%; left: 0px;">
+        <b class="pnbr pbn0">© 2022 The W2S University</b>
+        <a class="pnbr pbn1">Phạm Quyết Thắng</a>
+        <a class="pnbr pbn2">Nguyễn Duy Quyết</a>
+        <a class="pnbr pbn3">Phone number: +9022.333.333</a>
+        <a class="pnbr pbn4">Fax number: 012323262</a>
+        <a class="pnbr pbn5">Address: 12/3/21-Đường Phùng Khắc Khoan<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                P.Tân Hoà-TP.Biên Hoà-T.Đồng Nai</a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-folder-open'> &nbsp1,860</i></a>
+        <img class="fter ic-ft" src="anh/icon.png">
+        <b class="where tdyk" >Thăm dò ý kiến</b>
+
+        <div class="about about-1">
+            <b style="font-size: 0.5cm;">About The W2S</b><br><br>
+            <a>Giới thiệu</a><br>
+            <a>Tin tức</a><br>
+            <a>Chương trình học tập</a><br>
+        </div>
+
+        <div class="about about-2">
+            <b style="font-size: 0.5cm;">Students</b><br><br>
+            <a>Học sinh tiêu biểu</a><br>
+            <a href="kqht.html">Kết quả học tập</a><br>
+        </div>
+
+        <div class="about about-3">
+            <b style="font-size: 0.5cm;">Admissions-Jobs</b><br><br>
+            <a href="tuyensinh.html">Tuyển sinh</a><br>
+            <a href="Tuyendung1.html">Tuyển dụng</a><br>
+        </div>
+
+        <div class="about about-4">
+            <b style="font-size: 0.5cm;">Rate-Contact</b><br><br>
+            <a href="thamdoykien.html" style="color: rgb(255, 131, 30);">Thăm dò ý kiến</a><br>
+            <a href="Lienhe.html">Liên hệ</a><br>
+        </div>
+
+        <div id="cnt_1" class="fab fa-facebook-square">
+            <div  id="fb" class="cnt facebook">Bunnie30102</div>
+            <div  id="mn1" class="muinhon mn_1"></div>
+        </div> 
+
+        <div id="cnt_2" class="fab fa-instagram">
+
+            <div  id="ig" class="cnt instagram">bunnie.30102</div>
+            <div  id="mn2" class="muinhon mn_2"></div>
+        </div>
+
+        <div id="cnt_3" class="fab fa-twitter">
+
+            <div  id="tw" class="cnt twitter">Twitter</div>
+            <div  id="mn3" class="muinhon mn_3"></div>
+        </div>
+        
+        <div id="cnt_4" class="fab fa-linkedin">
+
+            <div  id="li" class="cnt linkedin">Linked-In</div>
+            <div  id="mn4" class="muinhon mn_4"></div>
+        </div>
+
+        <div id="cnt_5" class="fab fa-google-plus-g">
+
+            <div  id="gp" class="cnt googleplus">thangpham30102002@gmail.com</div>
+            <div  id="mn5" class="muinhon mn_5"></div>
+        </div>
+
+        <div id="cnt_6" class="fab fa-github">
+
+            <div  id="ghub" class="cnt github">GitHub</div>
+            <div  id="mn6" class="muinhon mn_6"></div>
+        </div>  
+        <script>
+            $(function(){
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 1000){          //cuộn chuột đến vị trí outset thì thực hiện 
+                        $('#cnt_1').show();
+                        $('#cnt_2').show();
+                        $('#cnt_3').show();
+                        $('#cnt_4').show();
+                        $('#cnt_5').show();
+                        $('#cnt_6').show();
+                    }
+                    else{
+                        $('#cnt_1').hide();
+                        $('#cnt_2').hide();
+                        $('#cnt_3').hide();
+                        $('#cnt_4').hide();
+                        $('#cnt_5').hide();
+                        $('#cnt_6').hide();
+                    }                  
+                });
+            });
+        </script>
+    </div>
+</body>

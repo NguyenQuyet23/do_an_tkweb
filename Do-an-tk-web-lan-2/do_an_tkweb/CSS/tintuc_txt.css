@@ -1,0 +1,397 @@
+.ttc{
+margin-left: 10px;
+background-color: rgba(30, 238, 253, 0.555);
+border-radius: 5px;
+box-shadow: 3px 3px 5px rgba(66, 66, 66, 0.349);
+height: 370px;
+width: 1222px;
+float: left;
+margin-top: 80px;
+display: flex;
+scroll-snap-type: x mandatory;
+position: absolute;
+overflow-x: scroll;
+animation-duration: 0.7s;
+animation-name: movedown1;
+top:50px;
+left:24px;
+}
+.ttc::-webkit-scrollbar{
+    height: 12px;  /* Độ rộng thanh cuộn*/ 
+}
+.ttc::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);/*Màu nền thanh cuộn*/
+}
+.ttc::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(
+            linear,
+            right bottom  ,
+            left top ,
+            color-stop(0.25, rgba(22, 56, 245, 0.733)),
+            color-stop(0.50, rgba(65, 123, 247, 0.801)),
+            color-stop(0.75, rgba(110, 165, 248, 0.781))
+        );    
+        border-radius: 10px;
+        border: 2px solid #ccc;        /* Bo góc scroll thumb */     /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+.ttc::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(27, 2, 255, 0.836)
+     /* Hiệu ứng di chuột đổi màu*/
+}
+@keyframes movedown1{
+    0% {
+        top:-50px;
+        left :24px;
+        opacity: 0;       
+      }
+      100%{
+        top: 50px;
+        left :22px;
+        opacity: 1;
+      }
+}
+
+
+
+.tt_txt{
+    float:left;
+    margin-left:20px;
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(100, 100, 100, 0.315);
+    border-radius: 5px;
+    left: 10px;
+    top: 35px;
+    position: relative;
+    animation-duration: 0.9s;
+    animation-name: moveleft1;
+    z-index: 6;
+    color: black;
+    transition: color 0.3s;
+    transition:ease-out 0.3s;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.452);
+    scroll-snap-align: start;
+    scroll-snap-stop: always ;
+}
+.tt_txt::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(70, 169, 250, 0.849) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+    box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.822);
+}
+.tt_txt:hover{
+    color: rgb(255, 255, 255);
+    padding: 5px;  
+}
+.tt_txt:hover::before{
+    transform: scaleY(1);
+}
+@keyframes moveleft1{
+    0% {
+        top:-45px;
+        left :-60px;
+        opacity: 0;       
+      }
+      100%{
+        top: 35px;
+        left :10px;
+        opacity: 1;
+      }
+}
+
+
+.tt_txt1{
+    float:left;
+    margin-left:340px;
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(100, 100, 100, 0.315);
+    border-radius: 5px;
+    left: 10px;
+    top: 35px;
+    position: absolute;
+    animation-duration: 1.2s;
+    animation-name: moveleft1;
+    z-index: 6;
+    color: black;
+    transition: color 0.3s;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.452);
+    scroll-snap-align: start;
+    transition:ease-out 0.3s;
+}
+.tt_txt1::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(70, 169, 250, 0.849) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+    box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.822);
+}
+.tt_txt1:hover{
+    color: rgb(255, 255, 255);
+    padding: 5px; 
+}
+.tt_txt1:hover::before{
+    transform: scaleY(1);
+}
+
+
+.tt_txt2{
+    float:left;
+    margin-left:660px;
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(100, 100, 100, 0.315);
+    border-radius: 5px;
+    left: 10px;
+    top: 35px;
+    position: absolute;
+    animation-duration: 1.5s;
+    animation-name: moveleft1;
+    z-index: 6;
+    color: black;
+    transition: color 0.3s;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.452);
+    scroll-snap-align: start;
+    transition:ease-out 0.3s;
+}
+.tt_txt2::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(70, 169, 250, 0.849) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+    box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.822);
+}
+.tt_txt2:hover{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.tt_txt2:hover::before{
+    transform: scaleY(1);
+}
+
+.tt_txt3{
+    float:left;
+    margin-left:980px;
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(100, 100, 100, 0.315);
+    border-radius: 5px;
+    left: 10px;
+    top: 35px;
+    position: absolute;
+    animation-duration: 1.8s;
+    animation-name: moveleft1;
+    z-index: 6;
+    color: black;
+    transition: color 0.3s;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.452);
+    scroll-snap-align: start;
+    transition:ease-out 0.3s;
+}
+.tt_txt3::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(70, 169, 250, 0.849) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+    box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.822);
+}
+.tt_txt3:hover{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.tt_txt3:hover::before{
+    transform: scaleY(1);
+}
+
+
+.tt_txt4{
+    float:left;
+    margin-left:1300px;
+    margin-top: 10px;
+    width: 280px;
+    height: 280px;
+    background-color: rgba(100, 100, 100, 0.315);
+    border-radius: 5px;
+    left: 10px;
+    top: 35px;
+    position: absolute;
+    animation-duration: 2.2s;
+    animation-name: moveleft1;
+    z-index: 6;
+    color: black;
+    transition: color 0.3s;
+    box-shadow: 3px 3px 3px rgba(107, 107, 107, 0.452);
+    scroll-snap-align: start;
+    transition:ease-out 0.3s;
+}
+.tt_txt4::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top :0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(70, 169, 250, 0.849) ;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: transform 2s cubic-bezier(0.5 1.6 0.4 0.7);
+    z-index: -1;
+    box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.822);
+}
+.tt_txt4:hover{
+    color: rgb(255, 255, 255);
+    width: 285px;
+    height: 285px;
+}
+.tt_txt4:hover::before{
+    transform: scaleY(1);
+}
+
+
+.thd{
+    position: absolute;
+    margin-left: 10px;
+    background-color: rgba(30, 238, 253, 0.555);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(66, 66, 66, 0.349);
+    height: 370px;
+    width: 1222px;
+    float: left;
+    margin-top: 480px;
+    
+    scroll-snap-type: x mandatory;
+  
+    overflow-x: scroll;
+    animation-duration: 0.7s;
+    animation-name: movedown1;
+    top:50px;
+    left:24px;
+    scroll-behavior: smooth;
+}
+.thd::-webkit-scrollbar{
+        height: 10px;  /* Độ rộng thanh cuộn*/ 
+}
+.thd::-webkit-scrollbar-track{
+        background-color: rgba(255, 255, 255, 0);/*Màu nền thanh cuộn*/
+}
+.thd::-webkit-scrollbar-thumb {
+        background-image: -webkit-gradient(
+            linear,
+            bottom left ,
+            top left,
+            color-stop(0.25, rgba(22, 56, 245, 0.733)),
+            color-stop(0.50, rgba(65, 123, 247, 0.801)),
+            color-stop(0.75, rgba(110, 165, 248, 0.781))
+        );    
+        border-radius: 10px;
+        border: 2px solid #ccc;       /* Bo góc scroll thumb */     /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+.thd::-webkit-scrollbar-thumb:hover {
+    
+        background-color: rgb(255, 2, 2)
+         /* Hiệu ứng di chuột đổi màu*/
+}
+@keyframes movedown1{
+        0% {
+            top:-50px;
+            left :24px;
+            opacity: 0;       
+          }
+          100%{
+            top: 50px;
+            left :22px;
+            opacity: 1;
+          }
+}
+
+.tgd{
+    position: absolute;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(66, 66, 66, 0.349);
+    height: 370px;
+    width: 1222px;
+    float: left;
+    margin-top: 880px;
+    border: 3px solid rgb(28, 183, 255);
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    animation-duration: 0.7s;
+    animation-name: movedown1;
+    top:50px;
+    left:24px;
+
+}
+.tgd::-webkit-scrollbar{
+        height: 10px;  /* Độ rộng thanh cuộn*/ 
+}
+.tgd::-webkit-scrollbar-track{
+        background-color: rgba(255, 255, 255, 0);/*Màu nền thanh cuộn*/
+}
+.tgd::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(
+        linear,
+        bottom left ,
+        top left,
+        color-stop(0.25, rgba(22, 56, 245, 0.733)),
+        color-stop(0.50, rgba(65, 123, 247, 0.801)),
+        color-stop(0.75, rgba(110, 165, 248, 0.781))
+    );    
+    border-radius: 10px;
+    border: 2px solid #ccc;       /* Bo góc scroll thumb */     /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+.tgd::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(255, 53, 2)
+         /* Hiệu ứng di chuột đổi màu*/
+}
+@keyframes movedown1{
+        0% {
+            top:-50px;
+            left :24px;
+            opacity: 0;       
+          }
+          100%{
+            top: 50px;
+            left :22px;
+            opacity: 1;
+          }
+}

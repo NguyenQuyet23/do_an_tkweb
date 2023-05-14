@@ -1,0 +1,1298 @@
+/*1*/
+@media only screen and ( min-width: 940px) and ( max-width: 1280px) {
+    .anhdong, .anhdong_img, .anhdong_img2{
+        float: left;
+        
+        width: 800px;
+        height: 300px;
+        background-color: black;      
+    }
+    .anhdong{
+        top: 0;
+        left: 0px;
+    }
+}
+/*2*/
+@media only screen and ( min-width: 720px) and ( max-width: 938px) {
+    .anhdong, .anhdong_img, .anhdong_img2{
+        float: left;
+        
+        width: 580px;
+        height: 250px;
+        background-color: black;      
+    }
+    .anhdong{
+        top: 0;
+        left: 0px;
+    }
+}
+/*3*/
+@media only screen and ( min-width: 550px) and ( max-width: 720px)  {
+    .anhdong, .anhdong_img, .anhdong_img2{
+        float: left;
+        
+        width: 470px;
+        height: 200px;
+        background-color: black;      
+    }
+    .anhdong{
+        top: 0px;
+        left: -70px;
+    }
+    .hp_img{
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        left: 0px;
+    }
+    .div_hp{
+        width: 260px; 
+        height: 40px; 
+        left: -220px; 
+        top: 80px; 
+    }
+    .tc{
+        margin-top:10px; 
+        margin-left: 15px; 
+        font-size: 0.5cm;
+    }
+
+    .div_hp2{
+        width: 203px; 
+        height: 40px; 
+        left: -167px; 
+        top: 140px; 
+    }
+    .tk_butt{
+        width: 140px;
+        height: 20px;
+        margin-top: 7.5px;
+        left: 10px;
+    }
+    .hp_img2{
+        left: 10px;
+        top: -5.5px;
+        width: 52px;
+        height: 50px;   
+    }
+
+
+    .hp_img_3{
+        left: -12.5px;
+        top: 188px;
+        width: 65px;
+        height: 65px; 
+    }
+    .menu_div{  
+        height: 270px;
+        width: 180px;   
+        top:200px;
+        left:40px;       
+    }
+}
+/*4*/
+@media only screen and ( min-width: 0px) and ( max-width: 550px)  {
+    .anhdong, .anhdong_img, .anhdong_img2{
+        float: left;
+        
+        width: 420px;
+        height: 150px;
+        background-color: black;      
+    }
+    .anhdong{
+        top: 0px;
+        left: -70px;
+    }
+    .hp_img{
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        left: 0px;
+    }
+    .div_hp{
+        width: 260px; 
+        height: 40px; 
+        left: -220px; 
+        top: 80px; 
+    }
+    .tc{
+        margin-top:10px; 
+        margin-left: 15px; 
+        font-size: 0.5cm;
+    }
+
+    .div_hp2{
+        width: 203px; 
+        height: 40px; 
+        left: -167px; 
+        top: 140px; 
+    }
+    .tk_butt{
+        width: 140px;
+        height: 20px;
+        margin-top: 7.5px;
+        left: 10px;
+    }
+    .hp_img2{
+        left: 10px;
+        top: -5.5px;
+        width: 52px;
+        height: 50px;   
+    }
+
+    .hp_img_3{
+        left: -12.5px;
+        top: 188px;
+        width: 65px;
+        height: 65px; 
+    }
+    .menu_div{  
+        height: 270px;
+        width: 180px;   
+        top:200px;
+        left:40px;
+    }
+}
+
+
+@media only screen and  (min-width:630px) and (max-width:1050px)
+{
+    .introduction, .introduction2,.introduction3,.introduction4,.tintuc1,.hstb1,.kqht1,.tuyendung1,.lienhe1{   
+ 
+        width: 80px;
+    }
+    .txt,.txt_lk{
+        margin-top: 3px;
+        margin-left: 0px;
+        padding: 10px;
+        font-size: 0.2cm;
+    }
+
+    /*Giới thiệu*/
+    .introduction{
+        margin-top: -10px;
+        margin-left: 230px;
+    }
+    .tintuc1{
+        margin-top: 0px;
+        margin-left: 230px;
+    }
+    
+    /*Chương trình học tập*/
+    .introduction2{
+        width: 100px;
+        margin-top: -10px;
+        margin-left: 330px;
+    }
+
+    .hstbxkqht{
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 448px;
+    }
+
+    .hstb1{
+        float: left;
+        width: 100px;
+        margin-top: -50px;
+        margin-left: -558px;
+    }
+    .kqht1{
+        float: left;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: -558px;
+    }
+
+    /*Tuyển sinh*/
+    .introduction3{
+        width: 70px;
+        margin-top: -10px;
+        margin-left: 450px;
+    }
+    .tuyendung1{
+        width: 70px;
+        margin-top: 0px;
+        margin-left: 450px;
+    }
+
+
+    /*Thăm dò ý kiến*/
+    .introduction4{
+        width: 100px;
+        margin-top: -10px;
+        margin-left: 530px;
+    }
+    .lienhe1{
+        width: 100px;
+        margin-top: 0px;
+        margin-left: 530px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width:1165px) and (max-width:1356px){
+    .muc_gioi_thieu{
+        width: 1128px;
+        height: 630px;
+        overflow-x: hidden;
+    }
+    .title_header{
+        width: 1116px;
+    }
+    /*Giới thiệu*/
+    .gt_txt{
+    margin-left:10px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    .no_img_0_1, .no_img{
+        width: 350px;
+        height: 250px;
+    }
+    .gt1_txt{
+        margin-left: 150px;
+        height: 200px;
+    }
+    .gt2_txt{
+        width: 600px;
+        height: 275px;
+    }
+    /*---------------------------------------------------*/
+
+    /* Tin tức */
+    .ttc{
+        margin-left: 10px; 
+        height: 370px;
+        width: 1060px;
+        margin-top: 80px;
+        top:50px;
+        left:24px;
+    }
+    .thd{
+        width: 1060px;
+    }
+    .tgd{
+        width: 1060px;
+    }
+    /*---------------------------------------------------------------*/
+
+
+    /* Chương trình học tập */
+    .ctht_tp{
+        width: 1060px; 
+    }
+    .kinang_ctht{
+        left: 150px;
+    }
+    .tienganh_ctht{
+        left: 250px;
+    }
+    .div_ctht_tp{
+        width: 1000px; 
+    }
+    .cp_ctht{
+        margin-left: 300px;
+    }
+    .hlkn_h_txt{
+        margin-top:10px; 
+    margin-left:390px;
+    font-size: 0.7cm;
+    }
+    .hlkn_div_1{
+        width: 350px;
+        height: 110px;
+        top: 20px;
+        left: 0px;
+    }
+    .hlkn_img_1{
+        margin-top:50px; 
+        right:200px; 
+        height:200px;
+        width: 200px; 
+    }
+    .hlkn_img_2{
+        margin-top:180px; 
+        left:0px; 
+        height:200px;
+        width: 200px; 
+    }
+    .hlkn_div_2{
+        width: 550px;
+        height: 130px;
+        top: 150px;
+        left: -110px;
+    }
+    .hlkn_div_3{
+        width: 350px;
+        height: 90px;
+        top: 170px;
+        right: 200px;
+    }
+    .knta{
+        width: 1060px;
+        height: 250px;
+        top:220px;
+        left: 30px;
+    }
+    .knta_h_txt{
+        margin-top:10px; 
+        margin-left:400px;
+    }
+
+
+
+    .foot{
+        margin-top: 1250px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:1110px;       
+    }
+}
+
+
+
+@media only screen and (min-width:1000px) and (max-width:1165px){
+    .muc_gioi_thieu{
+        width: 980px;
+        height: 630px;
+    }
+    .title_header{
+        width: 968px;
+    }
+    /* Giới thiệu*/
+    .gt_txt{
+    margin-left:10px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 350px;
+        height: 250px;
+    }
+    .gt1_txt{
+        margin-left: 60px;
+        height: 200px;
+    }
+    .gt2_txt{
+        width: 550px;
+        height: 375px;
+    }
+    .bhd, .cs_vc{
+        margin-top: 120px;
+    }
+    /*-----------------------------------------------------*/
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+        width: 940px;
+        margin-left: -5px;
+    }
+    /*--------------------------------------------------*/
+
+
+
+    /* Chương trình học tập */
+    .ctht_tp{
+        width: 940px; 
+        margin-left: -20px;
+    }
+    .vanhoa_ctht{
+        left: 10px;
+    }
+    .kinang_ctht{
+        left: 81px;
+    }
+    .tienganh_ctht{
+        left: 150px;
+    }
+    .div_ctht_tp{
+        left: 10px;
+        width: 920px; 
+    }
+    .cp_ctht{
+        margin-left: 250px;
+    }
+    .hlkn_h_txt{
+        margin-top:10px; 
+        margin-left:340px;
+        font-size: 0.7cm;
+    }
+    .hlkn_div_1{
+        width: 300px;
+        height: 120px;
+        top: 20px;
+        left: 0px;
+    }
+    .hlkn_img_1{
+        margin-top:50px; 
+        right:350px; 
+        height:200px;
+        width: 200px; 
+    }
+    .hlkn_img_2{
+        margin-top:180px; 
+        left:0px; 
+        height:200px;
+        width: 170px; 
+    }
+    .hlkn_div_2{
+        width: 450px;
+        height: 150px;
+        top: 150px;
+        left: -110px;
+    }
+    .hlkn_div_3{
+        width: 250px;
+        height: 120px;
+        top: 250px;
+        right: 300px;
+    }
+    .knta{
+        width: 935px;
+        height: 250px;
+        top:220px;
+        left: 30px;
+    }
+    .knta_h_txt{
+        margin-top:10px; 
+        margin-left:350px;
+    }
+    /*-------------------------------------------------------------*/
+    /* Học sinh tiêu biểu*/
+    .muc_hstb_1_ex{
+        left:90px ;
+    }
+    /*--------------------------------------------------------------------*/
+    .foot{
+        margin-top: 1350px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:965px;       
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1165px){
+    .muc_gioi_thieu{
+        width: 980px;
+        height: 630px;
+    }
+    .title_header{
+        width: 968px;
+    }
+    .gt_txt{
+    margin-left:10px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    .foot{
+        margin-top: 1350px;
+    }
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 350px;
+        height: 250px;
+    }
+    .gt1_txt{
+        margin-left: 60px;
+        height: 200px;
+    }
+    .gt2_txt{
+        width: 550px;
+        height: 375px;
+    }
+    .bhd, .cs_vc{
+        margin-top: 120px;
+    }
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+
+        width: 940px;
+        margin-left: -5px;
+    }
+    /*--------------------------------------------------*/
+    
+    
+}
+@media only screen and (min-width:970px) and (max-width:1000px){
+    .muc_gioi_thieu{
+        margin-left: 250px;
+        width: 550px;
+        height: 630px;
+    }
+    .title_header{
+        width: 538px;
+    }
+    .title_h_img{
+        height: 45px;
+        width: 150px;
+    }
+    .title_h_txt{
+        margin-left: 30px;
+        font-size: 0.75cm;
+    }
+    .gt_txt{
+    margin-left:5px;
+    margin-top: 50px;
+    width: 500px;
+    height: 250px;   
+    }
+    .foot{
+        margin-top: 2550px;
+    }
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 400px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .gt1_txt{
+        margin-left: 10px;
+        height: 400px;
+        width: 500px;
+    }
+    .gt1_txt_1{
+        margin-left: 20px;
+    }
+    .gt2_txt{
+        width: 500px;
+        height: 375px;
+        margin-right: 5px;
+    }
+    .bhd{
+        margin-left: 130px;
+        margin-top: 450px;
+    }
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+        width: 500px;
+        margin-left: -5px;
+    }
+    .no_notify{
+        width: 1200px;
+    }
+    /*--------------------------------------------------*/
+
+
+
+        /* Chương trình học tập */
+        .ctht_h_img{
+            width: 100px;
+            height: 30px;
+        }
+        .ctht_h_txt{
+            font-size: 0.65cm;
+        }
+
+        .ctht_tp{
+            width: 500px; 
+            margin-left: -20px;
+            height: 600px;
+        }
+        .cp_ctht{
+            margin-left: 30px;
+        }
+        .vanhoa_ctht{
+            left: 120px;
+        }
+        .kinang_ctht{
+            margin-top: 30px;
+            left: 120px;
+        }
+        .tienganh_ctht{
+            left: 120px;
+            margin-top: 30px;
+        }
+        .div_ctht_tp{
+            margin-top: -30px;
+            left: 10px;
+            width: 480px; 
+        }
+        
+        .hlkn_h_txt{
+            margin-top:10px; 
+            margin-left:120px;
+            font-size: 0.7cm;
+        }
+        .hlkn_div_1{
+            width: 350px;
+            height: 120px;
+            top: 20px;
+            left: 70px;
+        }
+        .hlkn_img_1{
+            margin-top:180px; 
+            right:850px; 
+            height:250px;
+            width: 250px; 
+        }
+        .hlkn_img_2{
+            margin-top:700px; 
+            left:120px; 
+            height:250px;
+            width: 250px; 
+        }
+        .hlkn_div_2{
+            width: 350px;
+            height: 230px;
+            top: 410px;
+            left: -280px;
+        }
+        .hlkn_div_3{
+            width: 250px;
+            height: 120px;
+            top: 950px;
+            right: 850px;
+        }
+        
+        .knta_h_txt{
+            margin-top:10px; 
+            margin-left:130px;
+        }
+        .knta{
+            width: 490px;
+            height: 350px;
+            top:980px;
+            left: 30px;
+        }
+        
+        .uudiem{
+            margin-top: 800px;
+            width: 490px;
+        }
+        .uudiem_img{
+            margin-top: 2800px;
+            left: 120px;
+        }
+
+
+
+        .foot_1{
+            margin-top: 3150px;
+        }
+        /*-------------------------------------------------------------*/
+    /* Học sinh tiêu biểu*/
+
+    .hstb_h_txt{
+        font-size: 0.65cm;
+    }
+    .hstb_h_img{
+        width: 100px;
+        height: 30px;
+    }
+    .muc_hstb_1_ex{
+        left:90px ;
+    }
+    /*---------------------------------------------------------------------*/
+    .cs_vc{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:700px;       
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width:970px){
+    .muc_gioi_thieu{
+        margin-left: 100px;
+        width: 480px;
+        height: 630px;
+    }
+    .title_header{
+        width: 468px;
+    }
+    .title_h_img{
+        height: 45px;
+        width: 150px;
+    }
+    .title_h_txt{
+        margin-left: 30px;
+        font-size: 0.7cm;
+    }
+    .gt_txt{
+    margin-left:5px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    .foot{
+        margin-top: 2550px;
+    }
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .gt1_txt{
+        margin-left: 10px;
+        height: 400px;
+        width: 450px;
+    }
+    .gt1_txt_1{
+        margin-left: 20px;
+    }
+    .gt2_txt{
+        width: 450px;
+        height: 375px;
+        margin-right: 5px;
+    }
+    .bhd{
+        margin-left: 70px;
+        margin-top: 450px;
+    }
+    .cs_vc{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:550px;       
+    }
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+        width: 440px;
+        margin-left: -5px;
+    }
+    .no_notify{
+        width: 1200px;
+    }
+    /*--------------------------------------------------*/
+
+    /* Chương trình học tập */
+    .ctht_h_img{
+        width: 100px;
+        height: 30px;
+    }
+    .ctht_h_txt{
+        font-size: 0.5cm;
+    }
+    
+    .ctht_tp{
+        width: 430px; 
+        margin-left: -20px;
+        height: 600px;
+    }
+    .cp_ctht{
+        margin-left: 40px;
+        font-size: 0.55cm;
+    }
+    .vanhoa_ctht{
+        left: 85px;
+    }
+    .kinang_ctht{
+        margin-top: 30px;
+        left: 85px;
+    }
+    .tienganh_ctht{
+        left: 85px;
+        margin-top: 30px;
+    }
+    .div_ctht_tp{
+        margin-top: -30px;
+        left: 10px;
+        width: 410px; 
+        height: 110px;
+    }
+            
+    .hlkn_h_txt{
+        margin-top:10px; 
+        margin-left:90px;
+        font-size: 0.7cm;
+    }
+    .hlkn_div_1{
+        width: 350px;
+        height: 100px;
+        top: 20px;
+        left: 30px;
+    }
+    .hlkn_img_1{
+        margin-top:180px; 
+        right:900px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_img_2{
+        margin-top:700px; 
+        left:70px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_div_2{
+        width: 350px;
+        height: 230px;
+        top: 410px;
+        left: -325px;
+    }
+    .hlkn_div_3{
+        width: 250px;
+        height: 120px;
+        top: 950px;
+        right: 900px;
+    }
+            
+    .knta_h_txt{
+        margin-top:10px; 
+        margin-left:100px;
+    }
+    .knta{
+        width: 430px;
+        height: 350px;
+        top:980px;
+        left: 30px;
+    }
+            
+    .uudiem{
+        margin-top: 800px;
+        width: 430px;
+    }
+    .uudiem_img{
+        margin-top: 2800px;
+        left: 85px;
+    }
+    
+    
+    
+    .foot_1{
+        margin-top: 3150px;
+    }
+    /*-------------------------------------------------------------*/
+        /* Học sinh tiêu biểu*/
+
+        .hstb_h_txt{
+            font-size: 0.5cm;
+        }
+        .hstb_h_img{
+            width: 100px;
+            height: 30px;
+        }
+        .muc_hstb_1_ex{
+            left:30px ;
+            width: 700px;
+            top: 150px;
+        }
+        /*---------------------------------------------------------------------*/
+}
+
+@media only screen and (min-width:650px) and (max-width:750px){
+    .muc_gioi_thieu{
+        margin-left: 70px;
+        width: 480px;
+        height: 630px;
+    }
+    .title_header{
+        width: 468px;
+    }
+    .title_h_img{
+        height: 45px;
+        width: 150px;
+    }
+    .title_h_txt{
+        margin-left: 30px;
+        font-size: 0.7cm;
+    }
+    .gt_txt{
+    margin-left:5px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    .foot{
+        margin-top: 2550px;
+    }
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .gt1_txt{
+        margin-left: 10px;
+        height: 400px;
+        width: 450px;
+    }
+    .gt1_txt_1{
+        margin-left: 20px;
+    }
+    .gt2_txt{
+        width: 450px;
+        height: 375px;
+        margin-right: 5px;
+    }
+    .bhd{
+        margin-left: 70px;
+        margin-top: 450px;
+    }
+    .cs_vc{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:520px;       
+    }
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+        width: 440px;
+        margin-left: -5px;
+    }
+    .no_notify{
+        width: 1200px;
+    }
+    /*--------------------------------------------------*/
+    
+    /* Chương trình học tập */
+    .ctht_h_img{
+        width: 100px;
+        height: 30px;
+    }
+    .ctht_h_txt{
+        font-size: 0.5cm;
+    }
+
+    .ctht_tp{
+        width: 430px; 
+        margin-left: -20px;
+        height: 600px;
+    }
+    .cp_ctht{
+        margin-left: 40px;
+        font-size: 0.55cm;
+    }
+    .vanhoa_ctht{
+        left: 85px;
+    }
+    .kinang_ctht{
+        margin-top: 30px;
+        left: 85px;
+    }
+    .tienganh_ctht{
+        left: 85px;
+        margin-top: 30px;
+    }
+    .div_ctht_tp{
+        margin-top: -30px;
+        left: 10px;
+        width: 410px; 
+        height: 110px;
+    }
+    
+    .hlkn_h_txt{
+        margin-top:10px; 
+        margin-left:90px;
+        font-size: 0.7cm;
+    }
+    .hlkn_div_1{
+        width: 350px;
+        height: 100px;
+        top: 20px;
+        left: 30px;
+    }
+    .hlkn_img_1{
+        margin-top:180px; 
+        right:900px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_img_2{
+        margin-top:700px; 
+        left:70px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_div_2{
+        width: 350px;
+        height: 230px;
+        top: 410px;
+        left: -325px;
+    }
+    .hlkn_div_3{
+        width: 250px;
+        height: 120px;
+        top: 950px;
+        right: 900px;
+    }
+    
+    .knta_h_txt{
+        margin-top:10px; 
+        margin-left:100px;
+    }
+    .knta{
+        width: 430px;
+        height: 350px;
+        top:980px;
+        left: 30px;
+    }
+    
+    .uudiem{
+        margin-top: 800px;
+        width: 430px;
+    }
+    .uudiem_img{
+        margin-top: 2800px;
+        left: 85px;
+    }
+
+
+
+    .foot_1{
+        margin-top: 3150px;
+    }
+    /*-------------------------------------------------------------*/
+        /* Học sinh tiêu biểu*/
+
+        .hstb_h_txt{
+            font-size: 0.5cm;
+        }
+        .hstb_h_img{
+            width: 100px;
+            height: 30px;
+        }
+        .muc_hstb_1_ex{
+            left:30px ;
+            width: 600px;
+            top: 150px;
+        }
+        .hstb_a{
+            
+            
+        }
+        
+        /*---------------------------------------------------------------------*/
+}
+@media only screen and (min-width:500px) and (max-width:650px){
+    .muc_gioi_thieu{
+        margin-left: -5px;
+        width: 480px;
+        height: 630px;
+    }
+    .title_header{
+        width: 468px;
+    }
+    .title_h_img{
+        height: 45px;
+        width: 150px;
+    }
+    .title_h_txt{
+        margin-left: 30px;
+        font-size: 0.7cm;
+    }
+    .gt_txt{
+    margin-left:5px;
+    margin-top: 50px;
+    width: 450px;
+    height: 250px;   
+    }
+    .foot{
+        float: bottom;
+    }
+    .no_img_0_1, .no_img, .no_img1, .no_img1_1{
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .gt1_txt{
+        margin-left: 10px;
+        height: 400px;
+        width: 450px;
+    }
+    .gt1_txt_1{
+        margin-left: 20px;
+    }
+    .gt2_txt{
+        width: 450px;
+        height: 375px;
+        margin-right: 5px;
+    }
+    .bhd{
+        margin-left: 70px;
+        margin-top: 450px;
+    }
+    .cs_vc{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .x_icon{  
+        margin-top:4px;
+        margin-left:440px;       
+    }
+    /* Tin tức */
+    .ttc, .thd, .tgd{
+        width: 440px;
+        margin-left: -5px;
+        overflow-x: scroll;
+    }
+    .no_notify{
+        width: 1200px;
+    }
+    /*--------------------------------------------------*/
+
+
+    /* Chương trình học tập */
+    .ctht_h_img{
+        width: 100px;
+        height: 30px;
+    }
+    .ctht_h_txt{
+        font-size: 0.5cm;
+    }
+
+    .ctht_tp{
+        width: 430px; 
+        margin-left: -20px;
+        height: 600px;
+    }
+    .cp_ctht{
+        margin-left: 40px;
+        font-size: 0.55cm;
+    }
+    .vanhoa_ctht{
+        left: 85px;
+    }
+    .kinang_ctht{
+        margin-top: 30px;
+        left: 85px;
+    }
+    .tienganh_ctht{
+        left: 85px;
+        margin-top: 30px;
+    }
+    .div_ctht_tp{
+        margin-top: -30px;
+        left: 10px;
+        width: 410px; 
+        height: 110px;
+    }
+    
+    .hlkn_h_txt{
+        margin-top:10px; 
+        margin-left:90px;
+        font-size: 0.7cm;
+    }
+    .hlkn_div_1{
+        width: 350px;
+        height: 100px;
+        top: 20px;
+        left: 30px;
+    }
+    .hlkn_img_1{
+        margin-top:180px; 
+        right:900px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_img_2{
+        margin-top:700px; 
+        left:70px; 
+        height:250px;
+        width: 250px; 
+    }
+    .hlkn_div_2{
+        width: 350px;
+        height: 230px;
+        top: 410px;
+        left: -325px;
+    }
+    .hlkn_div_3{
+        width: 250px;
+        height: 120px;
+        top: 950px;
+        right: 900px;
+    }
+    
+    .knta_h_txt{
+        margin-top:10px; 
+        margin-left:100px;
+    }
+    .knta{
+        width: 430px;
+        height: 350px;
+        top:980px;
+        left: 30px;
+    }
+    
+    .uudiem{
+        margin-top: 800px;
+        width: 430px;
+    }
+    .uudiem_img{
+        margin-top: 2800px;
+        left: 85px;
+    }
+
+    .foot_1{
+        float: bottom;
+    }
+    /*-------------------------------------------------------------*/
+        /* Học sinh tiêu biểu*/
+
+        .hstb_h_txt{
+            font-size: 0.5cm;
+        }
+        .hstb_h_img{
+            width: 100px;
+            height: 30px;
+        }
+        /*---------------------------------------------------------------------*/
+
+                /* Học sinh tiêu biểu*/
+
+                .hstb_h_txt{
+                    font-size: 0.5cm;
+                }
+                .hstb_h_img{
+                    width: 100px;
+                    height: 30px;
+                }
+                .muc_hstb_1_ex{
+                    left:100px ;
+                    width: 280px;
+                    top: 50px;
+                    height: 550px;
+                }
+                
+                /*---------------------------------------------------------------------*/
+}
+
+@media only screen and (min-height:600px) and (max-height:620px) {
+    .muc_gioi_thieu{
+
+        height: 540px;
+    }
+    .foot{
+        float: bottom;
+    }
+
+}
+@media only screen and (min-height:500px) and (max-height:599px){
+    .muc_gioi_thieu{
+
+        height: 440px;
+    }
+    .foot{
+        float: bottom;
+    }
+    .muc_hstb_1_ex{
+        overflow-y:scroll ;
+    }
+    
+}

@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet"  href="CSS/title_css.css" />
+    <link rel="stylesheet"  href="CSS/gioithieu_txt.css" />
+    <link rel="stylesheet"  href="CSS/tintuc_txt.css" />
+    <link rel="stylesheet"  href="CSS/hompage.css" />
+    <link rel="stylesheet"  href="CSS/ctht.css" />
+    <link rel="stylesheet"  href="CSS/hstb.css" />
+    <link rel="stylesheet"  href="CSS/responsive_pc_first.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
+    <link rel="stylesheet"  media="mediatype and|not|only (media feature)"href="resp.css" /> --> 
+    <link href="https://www.dafontfree.net/embed/bXVzZW8tNTAwJmRhdGEvMTgvbS84NzE4Ni9NdXNlbzUwMC1SZWd1bGFyLm90Zg" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link style="border-radius:5px ;" rel="shortcut icon" type="image/png" href ="anh/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The W2S-Trang chủ</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(
+        function(){
+            /*show*/
+            
+            $('#gioithieu').mouseenter(
+                function(){
+                    $('#tintuc').show(0);
+                    $('#hstb-kqht').hide(0);
+                }
+            );
+
+            $('#ctht').mouseenter(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb-kqht').show(0);
+                    $('#tuyendung').hide(0);
+                }
+            );
+            
+            $('#tuyensinh').mouseenter(
+                function(){
+                    $('#tuyendung').show(0);
+                    $('#hstb-kqht').hide(0);
+                    $('#lienhe').hide(0);
+                    
+                }
+            );
+
+            $('#tdyk').mouseenter(
+                function(){
+                    $('#lienhe').show(0);
+                    $('#tuyendung').hide(0);
+                }
+            );
+            
+            $('#hp').on('click', function(event){
+                    if(this.hash !== ""){
+                        event.preventDefault();
+                        var hash=this.hash;
+                        $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                        }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } 
+                }
+            
+            )
+            
+            $('#2hp').on('click', function(event){
+                    if(this.hash !== ""){
+                        event.preventDefault();
+                        var hash=this.hash;
+                        $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } 
+                }        
+            )
+
+
+
+
+            /* hide*/
+
+            $('#tt2').mouseenter(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb-kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#tintuc').mouseleave(
+                function(){
+                    $('#tintuc').hide(0);
+                }
+            );
+            $('#hstb-kqht').mouseleave(
+                function(){      
+                    $('#hstb-kqht').hide(0);
+                }
+            );
+            $('#tuyendung').mouseleave(
+                function(){      
+                    $('#tuyendung').hide(0);
+                }
+            );
+            $('#lienhe').mouseleave(
+                function(){      
+                    $('#lienhe').hide(0);
+                }
+            );
+            
+
+
+            $('#img_menu').click(
+                function(){
+                    $('#div_menu').show(300);
+                    $('#img_menu_hide').show(0);
+                }
+            );
+            $('#img_menu_hide').click(
+                function(){
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);
+                }
+            )
+            $('#div_menu').mouseleave(
+                function(){
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0); 
+                }
+            )
+          /*   $('#doanhnghiep').mouseenter(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+
+           $('#gg').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#map_id').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+
+
+            $('#hoatdong').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#chd_div_id_1').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#chd_div_id_2').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#chd_div_id_3').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+
+
+            $('#nganhdaotao').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#nganhdaotao_1').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#nganhdaotao_2').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#nganhdaotao_3').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#nganhdaotao_4').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#nganhdaotao_5').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+
+            
+            $('#cvnt').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_1').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_2').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_3').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_4').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_5').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#cvnt_6').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+
+
+
+            $('#hdt').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#hdt_1').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#hdt_2').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#hdt_3').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+            $('#hdt_4').hover(
+                function(){
+                    $('#tintuc').hide(0);
+                    $('#hstb').hide(0);
+                    $('#kqht').hide(0);
+                    $('#tuyendung').hide(0);
+                    $('#lienhe').hide(0);
+                    $('#div_menu').hide(300);
+                    $('#img_menu_hide').hide(0);              
+                }
+            );
+*/
+
+
+
+
+/*---------------------------------------------------*/
+/*title_click_page_child*/
+        //Mục giới thiệu
+            $('#gioithieu').click(
+                function(){
+                    $('#bg').show(30);
+                    $('#mucgioithieu').show(30);              
+                }
+            );
+            $('#close').click(
+                function(){
+                    $('#bg').hide(0);
+                    $('#mucgioithieu').hide(0);
+                }
+            )
+            $('#bg').click(
+                function(){
+                    $('#bg').hide(0);
+                    $('#mucgioithieu').hide(0);
+                }
+            )
+            
+        /*    $('#gt').mouseleave(
+                function(){
+                    $('#gt_1').hide(300);
+                    $('#gt_2').hide(300);
+                }
+            )*/
+        //Mục tin tức
+            $('#tintuc').click(
+                function(){
+                    $('#bg1').show(30);
+                    $('#muctintuc').show(30);
+                }
+            );
+            $('#close1').click(
+                function(){
+                    $('#bg1').hide(0);
+                    $('#tintuc').hide(0);
+                    $('#muctintuc').hide(0);
+                }
+            )
+            $('#bg1').click(
+                function(){
+                    $('#bg1').hide(0);
+                    $('#tintuc').hide(0);
+                    $('#muctintuc').hide(0);
+                }
+            )
+
+
+
+        //Chương trình học tập
+            $('#ctht').click(
+                function(){
+                    $('#bg2').show(30);
+                    $('#mucctht').show(30);
+                }
+            );
+            $('#close2').click(
+                function(){
+                    $('#bg2').hide(0);
+                    $('#mucctht').hide(0);
+                }
+            )
+            $('#bg2').click(
+                function(){
+                    $('#bg2').hide(0);
+                    $('#mucctht').hide(0);
+                }
+            )
+        //Học sinh tiêu biểu
+            $('#hstb').click(
+                function(){
+                    $('#bg3').show(30);
+                    $('#muchstb').show(30);
+                }
+            );
+            $('#close3').click(
+                function(){
+                    $('#bg3').hide(0);
+                    $('#muchstb').hide(0);
+                }
+            )
+            $('#bg3').click(
+                function(){
+                    $('#bg3').hide(0);
+                    $('#muchstb').hide(0);
+                }
+            )
+                //Học sinh tiêu biểu mở rộng
+                    //hstb_1
+                    $('#hstb_1').click(
+                        function(){
+                            $('#bg3_1').show(30);
+                            $('#hstb_1_extend').show(30);
+                        }
+                    );
+                    $('#close3_1').click(
+                        function(){
+                            $('#bg3_1').hide(0);
+                            $('#hstb_1_extend').hide(0);
+                        }
+                    );
+                    $('#bg3_1').click(
+                        function(){
+                            $('#bg3_1').hide(0);
+                            $('#hstb_1_extend').hide(0);
+                        }
+                    );
+                    
+                    //hstb_2
+                    $('#hstb_2').click(
+                        function(){
+                            $('#bg3_2').show(30);
+                            $('#hstb_2_extend').show(30);
+                        }
+                    );
+                    $('#close3_2').click(
+                        function(){
+                            $('#bg3_2').hide(0);
+                            $('#hstb_2_extend').hide(0);
+                        }
+                    );
+                    $('#bg3_2').click(
+                        function(){
+                            $('#bg3_2').hide(0);
+                            $('#hstb_2_extend').hide(0);
+                        }
+                    );
+
+                    //hstb_3
+                    $('#hstb_3').click(
+                        function(){
+                            $('#bg3_3').show(30);
+                            $('#hstb_3_extend').show(30);
+                        }
+                    );
+                    $('#close3_3').click(
+                        function(){
+                            $('#bg3_3').hide(0);
+                            $('#hstb_3_extend').hide(0);
+                        }
+                    );
+                    $('#bg3_3').click(
+                        function(){
+                            $('#bg3_3').hide(0);
+                            $('#hstb_3_extend').hide(0);
+                        }
+                    );
+                /*---------------------------------------------------*/
+        //Kết quả học tập
+            $('#kqht').click(function(){
+                window.location.href="kqht.html";
+            });
+        
+        //Tuyển sinh
+            $('#tuyensinh').click(function(){
+                window.location.href="tuyensinh.html";
+            });
+        //Thăm dò ý kiến
+            $('#tdyk').click(function(){
+                window.location.href="thamdoykien.html";
+            });
+        //Liên hệ
+            $('#lienhe').click(function(){
+                window.location.href="Lienhe.html";
+            });
+
+            $('#tuyendung').click(function(){
+                window.location.href="tuyendung1.html";
+            });
+
+
+
+
+            $('#tuyendung').click(function(){
+                window.location.href="tuyendung1.html";
+            });
+    
+        //các hoạt động
+
+            $('#chd_div_id_1').click(
+                function(){
+                    $('#chd_id_img_1_1').hide(0);
+                    $('#chd_id_img_1_2').hide(0);
+                    $('#chd_id_img_1_3').hide(0);
+                    $('#chd_id_img_1_4').hide(0);
+                    $('#chd_id_img_1_5').hide(0);
+                    $('#chd_id_img_1_6').hide(0);
+
+                    $('#thugon_id_1').show(0);
+                    
+                    $('#chd_id_img_1_7').show(0);
+                    $('#chd_id_img_1_8').show(0);
+                    $('#chd_id_img_1_9').show(0);
+                    $('#chd_id_img_1_10').show(0);
+                    $('#chd_id_img_1_11').show(0);
+                    $('#chd_id_img_1_12').show(0);
+                }
+            );
+            $('#thugon_id_1').click(
+                function(){
+                    $('#chd_id_img_1_1').show(0);
+                    $('#chd_id_img_1_2').show(0);
+                    $('#chd_id_img_1_3').show(0);
+                    $('#chd_id_img_1_4').show(0);
+                    $('#chd_id_img_1_5').show(0);
+                    $('#chd_id_img_1_6').show(0);
+
+                    $('#thugon_id_1').hide(0);
+                    
+                    $('#chd_id_img_1_7').hide(0);
+                    $('#chd_id_img_1_8').hide(0);
+                    $('#chd_id_img_1_9').hide(0);
+                    $('#chd_id_img_1_10').hide(0);
+                    $('#chd_id_img_1_11').hide(0);
+                    $('#chd_id_img_1_12').hide(0);
+                }
+            );
+
+
+            $('#chd_div_id_2').click(
+                function(){
+                    $('#chd_id_img_2_1').hide(0);
+                    $('#chd_id_img_2_2').hide(0);
+                    $('#chd_id_img_2_3').hide(0);
+                    $('#chd_id_img_2_4').hide(0);
+                    $('#chd_id_img_2_5').hide(0);
+                    $('#chd_id_img_2_6').hide(0);
+                    
+                    $('#thugon_id_2').show(0);
+
+                    $('#chd_id_img_2_7').show(0);
+                    $('#chd_id_img_2_8').show(0);
+                    $('#chd_id_img_2_9').show(0);
+                    $('#chd_id_img_2_10').show(0);
+                    $('#chd_id_img_2_11').show(0);
+                    $('#chd_id_img_2_12').show(0);
+                }
+            );
+            $('#thugon_id_2').click(
+                function(){                   
+                    $('#chd_id_img_2_1').show(0);
+                    $('#chd_id_img_2_2').show(0);
+                    $('#chd_id_img_2_3').show(0);
+                    $('#chd_id_img_2_4').show(0);
+                    $('#chd_id_img_2_5').show(0);
+                    $('#chd_id_img_2_6').show(0);
+
+                    $('#thugon_id_2').hide(0);
+                    
+                    $('#chd_id_img_2_7').hide(0);
+                    $('#chd_id_img_2_8').hide(0);
+                    $('#chd_id_img_2_9').hide(0);
+                    $('#chd_id_img_2_10').hide(0);
+                    $('#chd_id_img_2_11').hide(0);
+                    $('#chd_id_img_2_12').hide(0);
+                }
+            );
+
+            
+           
+            $('#chd_id_img_1_7').mouseenter(
+                function(){
+                    $('#chd_id_img_1_7_1').show(0);  
+                }
+            );
+            $('#chd_id_img_1_7_1').mouseleave(
+                function(){
+                    $('#chd_id_img_1_7_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_1_8').mouseenter(
+                function(){                    
+                    $('#chd_id_img_1_8_1').show(0);  
+                }
+            );
+            $('#chd_id_img_1_8_1').mouseleave(
+                function(){
+                    $('#chd_id_img_1_8_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_1_9').mouseenter(
+                function(){
+                    $('#chd_id_img_1_9_1').show(0);     
+                }
+            );
+            $('#chd_id_img_1_9_1').mouseleave(
+                function(){
+                    $('#chd_id_img_1_9_1').hide(0);     
+                }
+            );
+
+            $('#chd_id_img_1_10').mouseenter(
+                function(){
+                    $('#chd_id_img_1_10_1').show(0);  
+                }
+            );
+            $('#chd_id_img_1_10_1').mouseleave(
+                function(){
+                    $('#chd_id_img_1_10_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_1_11').mouseenter(
+                function(){ 
+                    $('#chd_id_img_1_11_1').show(0);     
+                }
+            );
+            $('#chd_id_img_1_11_1').mouseleave(
+                function(){ 
+                    $('#chd_id_img_1_11_1').hide(0);     
+                }
+            );
+
+            $('#chd_id_img_1_12').mouseenter(
+                function(){
+                    $('#chd_id_img_1_12_1').show(0);    
+                }
+            );
+            $('#chd_id_img_1_12_1').mouseleave(
+                function(){
+                    $('#chd_id_img_1_12_1').hide(0);    
+                }
+            );
+
+
+
+
+
+            $('#chd_id_img_2_7').mouseenter(
+                function(){
+                    $('#chd_id_img_2_7_1').show(0);  
+                }
+            );
+            $('#chd_id_img_2_7_1').mouseleave(
+                function(){
+                    $('#chd_id_img_2_7_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_2_8').mouseenter(
+                function(){                    
+                    $('#chd_id_img_2_8_1').show(0);  
+                }
+            );
+            $('#chd_id_img_2_8_1').mouseleave(
+                function(){
+                    $('#chd_id_img_2_8_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_2_9').mouseenter(
+                function(){
+                    $('#chd_id_img_2_9_1').show(0);     
+                }
+            );
+            $('#chd_id_img_2_9_1').mouseleave(
+                function(){
+                    $('#chd_id_img_2_9_1').hide(0);     
+                }
+            );
+
+            $('#chd_id_img_2_10').mouseenter(
+                function(){
+                    $('#chd_id_img_2_10_1').show(0);  
+                }
+            );
+            $('#chd_id_img_2_10_1').mouseleave(
+                function(){
+                    $('#chd_id_img_2_10_1').hide(0);  
+                }
+            );
+
+            $('#chd_id_img_2_11').mouseenter(
+                function(){ 
+                    $('#chd_id_img_2_11_1').show(0);     
+                }
+            );
+            $('#chd_id_img_2_11_1').mouseleave(
+                function(){ 
+                    $('#chd_id_img_2_11_1').hide(0);     
+                }
+            );
+
+            $('#chd_id_img_2_12').mouseenter(
+                function(){
+                    $('#chd_id_img_2_12_1').show(0);    
+                }
+            );
+            $('#chd_id_img_2_12_1').mouseleave(
+                function(){
+                    $('#chd_id_img_2_12_1').hide(0);    
+                }
+            );
+
+
+
+/*menu_click_page_child*/
+        //Giới thiệu
+            $('#gioithieu_menu').click(
+                function(){
+                    $('#bg').show(30);
+                    $('#mucgioithieu').show(30);                  
+                }
+            ); 
+
+        //Tin tức
+            $('#tintuc_menu').click(
+                function(){
+                    $('#bg1').show(30);
+                    $('#muctintuc').show(30);
+                }
+            );
+
+
+        //Chương trình học tập
+            $('#ctht_menu').click(
+                function(){
+                    $('#bg2').show(30);
+                    $('#mucctht').show(30);
+                }
+            );
+        
+        //Học sinh tiêu biểu
+            $('#hstb_menu').click(
+                function(){
+                    $('#bg3').show(30);
+                    $('#muchstb').show(30);
+                }
+            );
+        }
+    );  
+   
+// nút chuyển tới đầu trang    
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+    var offset = 300;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+    var duration = 100;
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset)
+                $('#move2top').fadeIn(duration);
+            else
+                $('#move2top').fadeOut(duration);
+        });
+        $('#move2top').click(function () {
+            $('body,html').animate({scrollTop: 0}, duration);
+        });
+    });
+
+
+
+    // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+
+// thời gian di trượt 0.75s ( 1000 = 1s )
+
+    $(function(){
+        $('#mucgioithieu').scroll(function () {
+            if ($('#mucgioithieu').scrollTop() > 150)
+            {
+                $('#gt_1').show();
+                $('#gt_2').show();
+                $('#banhoidong').show();
+                $('#csvc').show();
+            }
+        });
+
+    });
+</script>
+
+
+<body style="font-family: Arial, Helvetica, sans-serif; overflow-x:auto;">
+
+    <div class="load" id="" style="z-index: 11;">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+    </div>
+
+<!-- introduction -->
+<!--------------------------------------------------------------------->
+<!-- Giới thiệu -->
+    <div hidden class="back_ground" id="bg2" >
+        <div>
+            <img id="close" class="x_icon"  src="anh/xicon.png">
+        </div>
+    </div>
+    <div hidden class="muc_gioi_thieu" id="mucgioithieu">
+        <div class="title_header">
+            <img class="title_h_img"  src="anh/image-removebg-preview.png">
+            <b  class="title_h_txt"style="">GIỚI THIỆU</b> 
+            <br><br>
+        </div>
+        <div class="gt_txt">
+            <h1 style="font-size: 0.7cm; margin-left: 5px;">Lịch sử hình thành</h1>
+            <a style="font-size: 0.5cm; margin-left: 10px; float: left;">Là đơn vị trực thuộc Trường, với đội ngũ nhân viên,
+                giảng viên có chuyên môn cao, tận tâm.
+                Trung tâm luôn đặt trọng tâm vào việc nắm bắt,
+                cập nhật những xu hướng đào tạo tiến bộ  nhằm đáp ứng một lượng lớn 
+                nhu cầu học tập của cá nhân cũng như Doanh nghiệp. 
+            </a>
+        </div>
+        <div class="no_img">
+            <img class="no_img_0_1" src="anh/gt.jpg">
+        </div>
+        <div class="gt1_txt">
+            <h1 class="gt1_txt_1" >Phương châm hoạt động</h1>
+            <a style="font-size: 0.5cm; margin-left: 10px; float: left;">Sứ mạng: Trường  chú trọng bồi dưỡng và tạo điều kiện cho sinh viên phát triển một cách toàn diện, bao gồm cả trình độ chuyên môn lẫn đạo đức và thể chất,
+                hình thành một lực lượng lao động ưu tú sẵn sàng đảm nhận nhiều vị trí quan trọng
+                tại các doanh nghiệp.
+                Tầm nhìn: Với mục tiêu đào tạo nguồn nhân lực chất lượng cao và
+                tổ chức hoạt động nghiên cứu khoa học gắn kết với doanh nghiệp,
+                Trường phấn đấu trở thành một địa chỉ đào tạo có uy tín, đào tạo đa ngành, đa lĩnh vực.
+            </a>
+        </div>
+        <div  style="height: 350px; width:100%; float: left;margin-top: 50px; position: relative;" id="gt">
+            <div hidden class="gt2_txt" id="gt_1">
+                <h1 style="font-size: 0.7cm; margin-left: 10px; margin-top: 15px;">Thành tích giải thưởng</h1>
+                <a style="font-size: 0.5cm; margin-left: 10px; margin-top: -5px; float: left;"> 
+                    Giải thưởng Victa (ICT Award) năm 2008, 2010 với danh hiệu Đơn vị cung cấp dịch vụ đào tạo nhân lực CNTT xuất sắc nhất <br>
+                    Giải nhất Kỳ thi lập trình viên quốc tế ACM/ICPC Việt Nam (2012) <br>
+                    Top 10 ACM/ICPC châu Á (2011 - 2012) </br> 
+                    Giải Nhất cuộc thi IT Corner do Đại học Quốc gia Hà Nội tổ chức (2012) <br>
+                    Giải Nhì cuộc thi lập trình Samsung (2011) </br>
+                    Giải Nhì cuộc thi Imagine Cup do Microsoft tổ chức (2011) <br>
+                    Bằng khen của Bộ Giáo dục & Đào tạo dành cho Đơn vị có kết quả xuất sắc Nhất trong kỳ thi tin học sinh viên năm 2012… <br>
+                </a>
+            </div>
+            <div hidden class="no_img1" id="gt_2" >
+                <img class="no_img1_1"  src="anh/award-1.jpg">
+            </div>
+        </div> 
+        <div hidden class="bhd" id="banhoidong">
+            <a class="lk" href="BanHoiDong.html" target="_blank"><b>BAN HỘI ĐỒNG</b></a>
+            <a href="BanHoiDong.html" target="_blank">
+                <img href="BanHoiDong.html" target="_blank" style="width: 278px; border-radius: 4px; height: 200px; margin-top: -1px;margin-left: 1px;" src="anh/bhd.jpg">
+            </a>
+            </div> 
+        <div hidden class="cs_vc" id="csvc">
+            <a class="lk1" href="Cosovatchat.html" target="_blank"><b>CƠ SỞ VẬT CHẤT</b></a>
+             <a href="Cosovatchat.html" target="_blank">
+                <img  style="width: 278px; border-radius: 4px; height: 200px; margin-top: -1px;" src="anh/csvc.jpg">
+            </a>
+        </div>
+        <div class="foot"> 
+            <a style="float: left; margin-left:100px;margin-top:23px">© 2022 The W2S University</a>
+            <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+        </div>     
+    </div>
+<!-- Tin tức -->
+    <div hidden class="back_ground" id="bg1">
+         <div>
+            <img id="close1" class="x_icon" src="anh/xicon.png">
+        </div>  
+    </div>
+    <div hidden class="muc_gioi_thieu" id="muctintuc" >
+        <div class="title_header">
+            <img style="margin-left:10px;margin-top:10px;float:left; height:50px; width:300px;" src="anh/image-removebg-preview.png">
+            <b class="title_h_txt">TIN TỨC</b> 
+        <br><br>     
+        </div>
+        <div class="ttc">
+            <div style="height: 30px;width: 1222px; float: left; position: absolute;">
+                <i class="fas fa-bullhorn" style="font-size: 0.7cm; margin-left: 60px; margin-top: 10px;float: left ">
+                    <b>Thông báo chung</b>
+                </i>
+            </div>
+            <div class="tt_txt">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="anh/b2s-removebg-preview.png">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo trở lại trường ngày 30/2/2022</b></a>
+            </div>
+            <div class="tt_txt1">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="https://www.itepexam.com/wp-content/uploads/2019/10/Header-1024x801.png">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo lịch học toàn trường</b></a>
+            </div>
+            <div class="tt_txt2">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 100px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="anh/banner-removebg-preview.png">
+                </a>
+                <a style="float: left;margin-top: 110px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo lịch thi K12</b></a>
+            </div>
+            <div class="tt_txt3">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="anh/no_img-removebg-preview.png">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Chi tiết ngày hội thể thao trường</b> </a>
+            </div>
+            <div class="tt_txt4">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="https://icon-library.com/images/repair-icon-png/repair-icon-png-20.jpg">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo việc tạm ngừng hoạt động của khu A-Bảo dưỡng</b></a>
+            </div>
+        </div>
+        <div class="thd">
+            <div style="height: 20px;width: 1222px; float: left; position: absolute;">
+                <i class="fas fa-bullhorn" style="font-size: 0.7cm; margin-left: 40px; margin-top: 10px;float: left; ">
+                    <b>Tin hoạt động</b>
+                </i>
+            </div>
+            <div class="tt_txt">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="anh/no_img-removebg-preview.png">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo hoạt động tình nguyện ngày 30/3/2022</b></a>
+            </div>
+            <div class="tt_txt1">
+                <i class="fas fa-bell" style="font-size: 0.7cm; margin-left: 10px; margin-top: 5px;float: left;"></i>
+                <a href="404.html" target="_blank">
+                    <img style="height: 200px; width: 270px; margin-top: 5px; margin-left: 5px; float: left; border-radius: 5px;" src="anh/no_img-removebg-preview.png">
+                </a>
+                <a style="float: left;margin-top: 10px; margin-left: 10px; text-decoration: none;" href="404.html" target="_blank"><b>Thông báo hoạt động thể thao toàn trường</b></a>
+            </div>
+        </div>
+        <div class="tgd">
+            <div style="height: 30px;width: 1222px; float: left; position: absolute;">
+                <i class="fas fa-bullhorn" style="font-size: 0.7cm; margin-left: 40px; margin-top: 10px;float: left ">
+                    <b>Thông báo tin giáo dục</b>
+                </i>
+            </div>
+            <img style="width: 520px; height: 350px; float: left; margin-left: 330px; z-index: -1; position: absolute;" src="https://cdni.iconscout.com/illustration/premium/thumb/no-notification-4790933-3989286.png">
+            <a class="no_notify" ><b>No Notification Yet :\</b></a>   
+        </div>
+        <div class="foot" style="margin-top:1400px"> 
+            <a style="float: left; margin-left:100px;margin-top:23px">© 2022 The W2S University</a>
+            <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+        </div> 
+    </div> 
+<!--------------------------------------------------------------------->
+
+
+<!-- introduction2 -->
+<!--------------------------------------------------------------------->
+<!-- Chương trình học tập -->
+<div hidden class="back_ground" id="bg" >
+    <div>
+        <img id="close2" class="x_icon" src="anh/xicon.png">
+    </div>
+</div>
+<div hidden class="muc_gioi_thieu" id="mucctht">
+    <div class="title_header">
+        <img class="ctht_h_img" src="anh/image-removebg-preview.png">
+        <b class="ctht_h_txt" >CHƯƠNG TRÌNH HỌC TẬP</b> 
+        <br><br>
+    </div>
+    <div class="ctht_tp" style="background: linear-gradient(to bottom,  #ffffff4f 0%, #505050d2 100% );">
+        <div style="float:left;height: 30px; width: 1222px;">
+            <b class="cp_ctht">Các phần của chương trình học tập</b>
+        </div>
+    
+        <div class="vanhoa_ctht" >
+            <b class="text_vh_kn_ta">Văn Hoá</b>
+            <a class="text_vh_kn_ta_1">50% thời lượng:Trên nền tảng chương trình bộ GDĐT được triển khai.</a>
+        </div>
+        <div class="kinang_ctht" >
+            <b class="text_vh_kn_ta">Kĩ Năng</b>
+            <a class="text_vh_kn_ta_1">25% thời lượng chương trình rèn luyện ở trường</a>
+        </div>
+        <div class="tienganh_ctht" >
+            <b class="text_vh_kn_ta">Tiếng Anh</b>
+            <a class="text_vh_kn_ta_1">25% thời lượng ở trường</a>
+        </div>
+        <div class="div_ctht_tp">
+            <a class="text_div_ctht_tp">Rèn luyện Nghị lực là một trong 3 gốc rễ không thể thiếu của cây Nhân cách sống mà 
+                Nhà trường chú trọng trang bị cho học sinh, làm hành trang vững chắc để bước vào đời, 
+                với những hoạt động huấn luyện kỹ năng độc đáo chỉ có tại The W2S University.</a>
+        </div>
+    </div>
+
+    <div class="hlkn">
+        <div style="float:left;height: 30px; width: 1222px;">
+            <b class="hlkn_h_txt">Huấn luyện kĩ năng</b>
+        </div>
+        <div class="hlkn_div_1">
+            <a class="hlkn_a">Các môn kỹ năng giúp học sinh luôn nỗ lực, cố gắng đối diện với những
+                 yếu kém và khó khăn của chính mình, để từ đó vượt qua, hoàn thiện bản thân hướng đến chân, thiện, mỹ.
+            </a>
+        </div>
+        <img class="hlkn_img_1" src="anh/egskill-1.jpg">
+        <div class="hlkn_div_2">
+            <a class="hlkn_a">Qua từng tiết học Kỹ năng tưởng chừng như chỉ rèn luyện sức khỏe thể chất bên ngoài, 
+                nhưng ẩn chứa bên trong là sự phát triển của nội lực, để học sinh luôn vững vàng, bền bỉ trước những 
+                khó khăn trong cuộcsống với tâm bình an, kiên định. Để làm được điều đó, các giá trị cao đẹp giúp đời,
+                giúp người, tri âncuộc sống luôn được lồng ghép trong từng bài học, từng chuyến dã ngoại.
+            </a>
+        </div>
+        <img class="hlkn_img_2" src="anh/egskill-2.png">
+        <div class="hlkn_div_3">
+            <a class="hlkn_a">Từ đó hình thành ý thức bảo vệ môi trường, tiết kiệm, yêu thương, 
+                giúp đỡ mọi người để học sinh chuyển hóa nhận thức và nuôi dưỡng Nhân cách sống.
+            </a>
+        </div>       
+    </div>
+
+    <div class="knta">
+        <div style="float:left;height: 30px; width: 1222px;">
+            <b class="knta_h_txt">Kĩ năng tiếng anh</b>
+        </div><br><br>
+        <a class="knta_div">The W2S University hướng tới mục tiêu kép là học sinh vừa thành công trong lĩnh vực ngoại ngữ được 
+            công nhận bởi các chuẩn quốc tế, vừa trưởng thành hơn trong nhận thức, thái độ và hành động.
+        </a><br>
+        <a class="knta_div">Để chuẩn bị cho các em trở thành những công dân toàn cầu, các giáo trình được chọn lọc trên 
+            tinh thần “3 gốc rễ” không những mở ra chân trời kiến thức đa dạng về thế giới mà còn giúp các
+            em thấm nhuần những giá trị sống như yêu thương, chấp nhận mình và trân trọng sự khác biệt của thế giới.
+        </a><br>
+        <a class="knta_div">Thông qua việc học ngoại ngữ, các em được rèn luyện những kỹ năng thiết yếu của thế kỷ 21 như
+            kỹ năng lãnh đạo, kỹ năng làm việc nhóm và tư duy sáng tạo
+        </a>
+    </div>
+    <div class="uudiem">
+        <div style="float:left;height: 30px; width: 1222px;">
+            <b style="float:left; margin-top:10px; margin-left:170px;font-size: 0.7cm;">Ưu điểm</b>
+        </div><br>
+        <a class="uudiem_div">Học sinh có nhiều quyền kiểm soát hơn</a>
+        <a class="uudiem_div">Khuyến khích việc học tập lấy học sinh làm trung tâm và cộng tác</a>
+        <a class="uudiem_div">Bài học và nội dung dễ tiếp cận hơn (miễn là có quyền truy cập công nghệ)</a>
+        <a class="uudiem_div">Tạo cơ hội cho phụ huynh biết tình hình lớp học</a>  
+        <a class="uudiem_div">Hiệu quả hơn</a>
+    </div>
+    <img class="uudiem_img" src="anh/no_img.jpg">
+    <div class="foot_1"> 
+        <a style="float: left; margin-left:100px;margin-top:23px">© 2022 The W2S University</a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+    </div>     
+</div>
+<!-- Học sinh tiêu biểu -->
+<div hidden class="back_ground" id="bg3" >
+    <div>
+        <img id="close3" class="x_icon" src="anh/xicon.png">
+    </div>
+</div>
+<div hidden class="muc_gioi_thieu" id="muchstb">
+    <div class="title_header">
+        <img class="hstb_h_img" src="anh/image-removebg-preview.png">
+        <b class="hstb_h_txt" >HỌC SINH TIÊU BIỂU</b> 
+        <br><br>
+    </div>
+    <div class="hstb_div" style="top:110px; left:30px; animation: moveleft 0.5s;" id="hstb_1">
+        <img class="hstb_img" src="anh/no_img.jpg">
+        <b class="hstb_a">Họ và tên:&nbsp</b><a class="hstb_a">Phạm Quyết Thắng</a><br>
+        <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">200629 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+        <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">K16CNTT2</a><br>
+    </div>
+    <div class="hstb_div" style="top:110px; left:380px; animation: moveleft_1 1s;" id="hstb_2">
+        <img class="hstb_img" src="anh/no_img.jpg">
+        <b class="hstb_a">Họ và tên:&nbsp</b><a class="hstb_a">Nguyễn Duy Quyết</a><br>
+        <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">200520 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+        <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">K16CNTT2</a><br>
+    </div>
+    <div class="hstb_div" style="top:110px; left:720px; animation: moveleft_2 1.5s;" id="hstb_3">
+        <img class="hstb_img" src="anh/no_img.jpg">
+        <b class="hstb_a">Họ và tên:&nbsp</b><a class="hstb_a">ABCDEFGH</a><br>
+        <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">123456 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+        <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">AAAAA</a><br>
+    </div>
+    <div class="foot_1" style="margin-top:650px"> 
+        <a style="float: left; margin-left:100px;margin-top:23px">© 2022 The W2S University</a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+    </div>  
+</div>
+    <!-- Học sinh tiêu biểu (Mở rộng) -->
+        <!-- 1 -->
+            <div hidden class="back_ground_ex" id="bg3_1" >
+                <div>
+                    <img id="close3_1" class="x_icon" src="anh/xicon.png">
+                </div>
+            </div>
+            <div hidden class="muc_hstb_1_ex" id="hstb_1_extend">
+                <img class="hstb_img_ex" src="anh/no_img.jpg">
+                <b class="hstb_a" style="margin-top :25px">Họ và tên:&nbsp</b><a class="hstb_a" style="margin-top :25px">Phạm Quyết Thắng</a><br><br><br>
+                <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">200629 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">K16CNTT2</a><br><br>
+                <b class="hstb_a">Thứ hạng trong trường:&nbsp</b><a class="hstb_a">12</a><br><br>
+                <b class="hstb_a">Thành tích đạt được tiêu biểu:&nbsp</b><a class="hstb_a">Updating...&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Thành tích đạt được khác:&nbsp</b><a class="hstb_a">Updating...&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a"> Ghi chú:&nbsp</b><a class="hstb_a">Updating...</a><br>
+            </div>
+        <!-- 2 -->
+            <div hidden class="back_ground_ex" id="bg3_2" >
+                <div>
+                    <img id="close3_2" class="x_icon" src="anh/xicon.png">
+                </div>
+            </div>
+            <div hidden class="muc_hstb_1_ex" id="hstb_2_extend">
+                <img class="hstb_img_ex" src="anh/no_img.jpg">
+                <b class="hstb_a" style="margin-top :25px">Họ và tên:&nbsp</b><a class="hstb_a" style="margin-top :25px">Nguyễn Duy Quyết</a><br><br><br>
+                <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">200520 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">K16CNTT2</a><br><br>
+                <b class="hstb_a">Thứ hạng trong trường:&nbsp</b><a class="hstb_a">19</a><br><br>
+                <b class="hstb_a">Thành tích đạt được tiêu biểu:&nbsp</b><a class="hstb_a">Updating... &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Thành tích đạt được khác:&nbsp</b><a class="hstb_a">Updating...</a><br><br>
+                <b class="hstb_a">Ghi chú:&nbsp</b><a class="hstb_a">Updating...</a><br>
+            </div>
+        <!-- 3 -->
+            <div hidden class="back_ground_ex" id="bg3_3" >
+                <div>
+                    <img id="close3_3" class="x_icon" src="anh/xicon.png">
+                </div>
+            </div>
+            <div hidden class="muc_hstb_1_ex" id="hstb_3_extend">
+                <img class="hstb_img_ex" src="anh/no_img.jpg">
+                <b class="hstb_a" style="margin-top :25px">Họ và tên:&nbsp</b><a class="hstb_a" style="margin-top :25px">Updating...</a><br><br><br>
+                <b class="hstb_a">MSSV (HS):&nbsp</b><a class="hstb_a">Updating... &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Lớp:&nbsp</b><a class="hstb_a">Updating...</a><br><br>
+                <b class="hstb_a">Thứ hạng trong trường:&nbsp</b><a class="hstb_a">Updating...</a><br><br>
+                <b class="hstb_a">Thành tích đạt được tiêu biểu:&nbsp</b><a class="hstb_a">Updating... &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+                <b class="hstb_a">Thành tích đạt được khác:&nbsp</b><a class="hstb_a">Updating...</a><br><br>
+                <b class="hstb_a">Ghi chú:&nbsp</b><a class="hstb_a">Updating...</a><br>
+            </div>
+        <!-- End -->
+    <!------------------------------------------------------------------------->
+    
+<!-- Kết quả học tập -->
+
+<!--------------------------------------------------------------------->
+
+
+<!-- introduction3 -->
+<!--------------------------------------------------------------------->
+<!-- Tuyển sinh -->
+
+<!-- Tuyển dụng -->
+
+<!--------------------------------------------------------------------->
+
+
+<!-- introduction4 -->
+<!--------------------------------------------------------------------->
+<!-- Thăm dò ý kiến 
+    <div hidden class="back_ground" id="bg4" >
+        <div>
+            <img id="close4" class="x_icon" style="" src="anh/xicon.png">
+        </div>
+    </div>
+    <div hidden class="muc_gioi_thieu" id="mucthamdoykien">
+        <div class="title_header">
+            <img class="title_h_img" style="" src="anh/image-removebg-preview.png">
+            <b  class="title_h_txt"style="">GIỚI THIỆU</b> 
+            <br><br>
+        
+</div>-->
+<!-- Liên hệ -->
+
+<!--------------------------------------------------------------------->
+
+
+
+<!-- inrtroduction-child -->
+<!--------------------------------------------------------------------->
+<!-- Tin tức -->
+    <div hidden class="tintuc1"  id="tintuc">
+        <b class="txt">Tin tức</b>
+    </div>
+<!-- Học sinh tiêu biểu x Kết quả học tập-->
+    <div hidden class="hstbxkqht"  id="hstb-kqht">
+        <div  class="hstb1"  id="hstb">
+            <b class="txt">Học sinh tiêu biểu</b>
+        </div>
+    <!--  -->
+        <div  class="kqht1"  id="kqht" target="_blank">
+            <a href="kqht.html" target="_blank" class="txt_lk"><b>Kết quả học tập</b></a>
+        </div>
+    </div>
+<!-- Tuyển dụng -->
+    <div hidden class="tuyendung1"  id="tuyendung">
+        <a href="Tuyendung1.html" target="_blank" class="txt_lk_4"><b>Tuyển dụng</b></a>
+    </div>
+<!-- Liên hệ -->
+    <div hidden class="lienhe1"  id="lienhe">
+        <a href="Lienhe.html" target="_blank" class="txt_lk_3"><b>Liên hệ</b></a>
+    </div>
+<!--------------------------------------------------------------------->
+
+
+
+<!-- introduction-parent -->
+<!--------------------------------------------------------------------->
+<!-- title -->
+<a id="point" style="opacity: 0;z-index: 1; position: absolute; margin-top: -10px;">12</a>
+    <div class="titled" id ="tt2" >     
+        <img class="img_title"  src="anh/image-removebg-preview (2).png">    
+    </div>
+<!-- Giới thiệu -->
+    <div class="introduction" id="gioithieu">
+        <b class="txt">Giới thiệu</b>
+    </div>
+<!-- Chương trình học tập -->
+    <div class="introduction2" id="ctht">
+        <b class="txt">Chương trình học tập</b>
+    </div>
+<!-- Tuyển sinh -->
+    <div class="introduction3" id="tuyensinh">
+        <a href="tuyensinh.html" target="_blank" class="txt_lk_1"><b>Tuyển sinh</b></a>
+    </div>
+<!-- Thăm dò ý kiến -->    
+    <div class="introduction4" id="tdyk">
+        <a href="thamdoykien.html" target="_blank" class="txt_lk_2"><b>Thăm dò ý kiến</b></a>
+    </div>
+<!--------------------------------------------------------------------->
+
+<!-- Home Page -->
+<!--------------------------------------------------------------------->
+    <div class="anhdong" id="anhdong-id">
+        <img  class="anhdong_img" src="anh/banner 1-1.jpg">
+        <img  class="anhdong_img2" src="anh/banner 1-3.jpg">
+    </div>
+    
+    <div class="div_hp" id="move2top">
+        <a class="tc" id="hp" href="#point"><b>Chuyển tới đầu trang</b></a>      
+        <a href="#point"id="2hp" >
+            <img class="hp_img" src="https://90namdangbothanhhoa.vn/phi-tieu-thuyet-la-gi/imager_2_27096_700.jpg">
+        </a> 
+    </div>
+
+    <div class="div_hp2" id="find">         
+        <input class="tk_butt" name="find" type="text" placeholder="Tìm kiếm">
+        <a id="2_hp" >
+            <img class="hp_img2" src="anh/timkiem.png">
+        </a> 
+    </div>
+     
+    <img style="z-index: 5;" class="hp_img_3" id="img_menu" src="anh/menu-577-1150114.png">
+    <img hidden class="hp_img_3" style="z-index: 6;" id="img_menu_hide" src="anh/menu-577-1150114.png">
+    <div hidden class="menu_div" id="div_menu">
+        <div id="gioithieu_menu" class="gioithieu_menu_class"><b>Giới thiệu</b></div><br><br>
+        <div id="tintuc_menu" class="gioithieu_menu_class"><b>Tin tức</b></div><br><br>
+        <div id="ctht_menu" class="gioithieu_menu_class"><b>Chương trình học tập</b></div><br><br>
+        <div id="hstb_menu" class="gioithieu_menu_class"><b>Học sinh tiêu biểu</b></div><br><br>
+        <div class="gioithieu_menu_class"><b><a class="kqht_menu_class" href="kqht.html">Kết quả học tập</a></b></div><br><br>
+        <div class="gioithieu_menu_class"><b><a class="kqht_menu_class" href="tuyensinh.html">Tuyển sinh</a></b></div><br><br>
+        <div id="tuyendung_menu" class="gioithieu_menu_class"><b><a class="kqht_menu_class" href="Tuyendung1.html">Tuyển dụng</a></b></div><br><br>
+        <div id="tdyk_menu" class="gioithieu_menu_class"><b><a class="kqht_menu_class" href="thamdoykien.html">Thăm dò ý kiến</a></b></div><br><br>
+        <div id="lienhe_menu" class="gioithieu_menu_class"><b> <a class="kqht_menu_class" href="Lienhe.html">Liên hệ</a></b></div><br><br>
+    </div>  
+    
+
+
+    <div class="title_div_1 tt_chd_div_1" id="hdt">
+        <b class="title_txt_1 tt_chd_txt_1">CÁC HỆ ĐÀO TẠO</b>
+    </div>
+    
+    <div class="title_div_1_1 child_1" id="hdt_1">
+        <b>
+            <a class="title_txt_1_1 txt_1" href="404.html">Tiến sĩ</a>
+        </b>
+    </div>  
+
+    <div class="title_div_1_1 child_2" id="hdt_2">
+        <b>
+            <a class="title_txt_1_1 txt_2" href="404.html">Thạc sĩ</a>
+        </b>
+    </div>
+
+    <div class="title_div_1_1 child_3" id="hdt_3">
+        <b>
+            <a class="title_txt_1_1 txt_3" href="404.html">Đại học</a>
+        </b>
+    </div>
+
+    <div class="title_div_1_1 child_4" id="hdt_4">
+        <b>
+            <a class="title_txt_1_1 txt_4" href="404.html">Cao đẳng</a>
+        </b>
+    </div>
+
+    <script>
+        $(document).ready(
+        function(){
+            $('#hdt_1').click(function(){
+                window.location.href="404.html";
+            });
+            $('#hdt_2').click(function(){
+                window.location.href="404.html";
+            });
+            $('#hdt_3').click(function(){
+                window.location.href="404.html";
+            });
+            $('#hdt_4').click(function(){
+                window.location.href="404.html";
+            });
+        })
+    </script>
+
+
+
+
+
+    <div class="title_div_1 tt_chd_div_2" id="cvnt">
+        <b class="title_txt_1 tt_chd_txt_2">CÙNG VỚI NHÀ TRƯỜNG</b>
+    </div>
+
+    <div class="tt_1_div div_chd_1" id="cvnt_1">
+        <img class="image" src="anh/cvnt1.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Đông đảo sinh viên tình nguyện hợp tác với nhà 
+            trường chuẩn bị cho công tác trở lại trường của...</a>
+    </div>
+
+    <div class="tt_1_div div_chd_2" id="cvnt_2">
+        <img class="image" src="anh/cvnt2.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Câu lạc bộ CNTT đang được nhà trường ưu đã lớn...</a>
+    </div>
+
+    <div class="tt_1_div div_chd_3" id="cvnt_3">
+        <img class="image" src="anh/no_img.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Khởi động giải codewar 2021</a>
+    </div>
+
+    <div class="tt_1_div div_chd_4" id="cvnt_4">
+        <img class="image_1" src="anh/cvnt4.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Ra mắt trung tâm tuyển sinh và công chúng</a>
+    </div>
+
+    <div style="background-color: aliceblue;" class="tt_1_div div_chd_5" id="cvnt_5">
+        <img class="image_1" src="anh/cvnt3.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Lễ kí kết hợp tác với Vietcombank</a>
+    </div>
+
+    <div style="background-color: aliceblue;" class="tt_1_div div_chd_6" id="cvnt_6">
+        <img class="image_1" src="anh/cvnt5.jpg">
+        <a href="404.html" class="cvnt_txt chd_cvnt_txt_1">Khởi động lại chương trình "liên kết việc làm"</a>
+    </div>
+
+
+
+    <div class="title_div_1 tt_chd_div_3" id="nganhdaotao">
+        <b class="title_txt_1 tt_chd_txt_3">CÁC NGÀNH ĐÀO TẠO CỦA NHÀ TRƯỜNG</b>
+    </div>
+
+    <div class="tt_2_div div_2_chd_1" id="nganhdaotao_1">
+        <img class="tt_2_img img_1" src="anh/ngon_ngu.png"><br><br><br><br>
+        <b class="tt_2_txt">Ngôn ngữ học:<br>Tiếng Trung<br> Hàn, Nhật, Anh</b>
+    </div>
+
+    <div class="tt_2_div div_2_chd_2" id="nganhdaotao_2">
+        <img class="tt_2_img img_2" src="anh/cokhi.png"><br><br><br><br>
+        <b class="tt_2_txt">Kĩ thuật:<br>Cơ khí oto, kĩ thuật điện tử..</b>
+    </div>
+
+    <div class="tt_2_div div_2_chd_3" id="nganhdaotao_3">
+        <img class="tt_2_img img_3" src="anh/it.png"><br><br><br><br>
+        <b class="tt_2_txt">Công nghệ:<br>Công nghệ thông tin, Designer,..</b>
+    </div>
+
+    <div class="tt_2_div div_2_chd_4" id="nganhdaotao_4">
+        <img class="tt_2_img img_4" src="anh/ketoan.png"><br><br><br><br>
+        <b class="tt_2_txt">Kế toán-Tài chính:<br>Kiểm toán, Tài chính ngân hàng,..</b>
+    </div>
+
+    <div class="tt_2_div div_2_chd_5" id="nganhdaotao_5">
+        <img class="tt_2_img img_5" src="anh/qtkd.png"><br><br><br><br>
+        <b class="tt_2_txt">Quản lí:<br>Quản trị kinh doanh, quản lí nhân sự,..</b>
+    </div>
+
+    <script>
+
+// thời gian di trượt 0.75s ( 1000 = 1s )
+        $(function(){
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1050){          //cuộn chuột đến vị trí outset thì thực hiện 
+                    $('#nganhdaotao_1').show();
+                    $('#nganhdaotao_2').show();
+                    $('#nganhdaotao_3').show();
+                    $('#nganhdaotao_4').show();
+                    $('#nganhdaotao_5').show();
+                }
+                else{
+                    $('#nganhdaotao_1').hide();
+                    $('#nganhdaotao_2').hide();
+                    $('#nganhdaotao_3').hide();
+                    $('#nganhdaotao_4').hide();
+                    $('#nganhdaotao_5').hide();
+                }
+            });
+        });
+    </script>
+
+
+
+    <div class="careers">
+        <div class="careers-div" >
+            <b class="career cr-txt-1" >Hướng nghiệp cho sinh viên</b>
+            <p class="career cr-txt-2" id="cr-txt-2-id">Có rất nhiều hoạt động và dịch vụ hỗ trợ bạn
+                 lên kế hoạch và đưa ra các quyết định nghề nghiệp, 
+                 cũng như tìm được công việc phù hợp sau khi tốt nghiệp. 
+                 Chuẩn bị cho việc tuyển dụng, Kế hoạch và Quyết định nghề nghiệp, 
+                 Các Chương trình và Sự kiện Hướng nghiệp.</p>
+        </div>
+        <div class="tht" id="tht-id">
+            <a href="404.html" class="tht-chd"><b>Tìm hiểu thêm</b></a>
+        </div>
+        <img style="position: absolute; z-index: 2; width: 100%;height: 450px;" src="anh/careers.jpg">
+    </div>
+    <script>
+        // thời gian di trượt 0.75s ( 1000 = 1s )
+                $(function(){
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 1800){          //cuộn chuột đến vị trí outset thì thực hiện 
+                            $('#cr-txt-2-id').show();
+                            $('#tht-id').show();
+                        }
+                        else{
+                            $('#cr-txt-2-id').hide();
+                            $('#tht-id').hide();
+                        }
+                    });
+                });
+            </script>
+
+
+    <div class="tnht">
+        <div class="title_div_1 tt_chd_div_3-1">
+            <b class="title_txt_1 tt_chd_txt_3-1">TRẢI NGHIỆM HỌC TẬP TOÀN CẦU</b>
+        </div> 
+        <p class="toancau">The W2S là trường đại học toàn cầu về công nghệ, thiết kế và sáng tạo.
+             Danh tiếng này đã được khẳng định qua những hoạt động thực tiễn của trường.</p>
+        
+        
+            <div class="anhh anhh-1">
+                <img id="" class="anh-1-1 anh-1-1-1" src="anh/barcelona-campus.jpg">
+                <div  class="anh anh-1" id=""> 
+                    <b class="anh-txt anh-1-txt">Cơ sở học tập toàn cầu</b>
+                    <p class="anh-txt anh-1-2-txt">Đại học The W2S có nhiều cơ sở trên toàn cầu</p>
+                    <a class="anh-txt anh-1-3-txt">Tìm hiểu các cơ sở của The W2S</a>        
+                </div>
+            </div>
+        
+        
+        
+            <div class="anhh anhh-2">
+                <img id="" class="anh-1-1 anh-1-1-2" src="anh/teacher.jpg">
+                <div  class="anh anh-2" id="">
+                    <b class="anh-txt anh-2-txt">Cơ hội du học trên toàn thế giới</b>
+                    <p class="anh-txt anh-2-2-txt">Hòa mình vào một môi trường văn hóa khác biệt và khám phá thế giới</p>
+                    <a class="anh-txt anh-2-3-txt">Tìm hiểu về lựa chọn du học</a>     
+                </div>
+            </div>
+        
+        
+        
+            <div class="anhh anhh-3">
+                <img id="" class="anh-1-1 anh-1-1-3" src="anh/campus.jpg">
+                <div class="anh anh-3" id="">
+                    <b class="anh-txt anh-3-txt">Học tập tại W2S lUNA</b>
+                    <p class="anh-txt anh-3-2-txt">Khám phá cuộc sống tại W2S lUNA</p>
+                    <a class="anh-txt anh-3-3-txt">Trải nghiệm lUNA</a>   
+                </div>
+            </div> 
+    </div> 
+ <!--  <script>
+        $(document).ready(
+            function(){
+        /*show*/            
+                $('#anh-1').mouseenter(
+                    function(){
+                        $('#show-1').show(0);
+                    }
+                );
+                $('#anh-2').mouseenter(
+                    function(){
+                        $('#show-2').show(0);
+                    }
+                );
+                $('#anh-3').mouseenter(
+                    function(){
+                        $('#show-3').show(0);
+                    }
+                );
+            /*hide*/
+                $('#pic-1').mouseleave(
+                    function(){
+                        $('#show-1').hide(00);
+                    }
+                );
+
+                $('#pic-2').mouseleave(
+                    function(){
+                        $('#show-2').hide(0);
+                    }
+                );
+
+                $('#pic-3').mouseleave(
+                    function(){
+                        $('#show-3').hide(0);
+                    }
+                );
+            }
+        )    
+    </script>--> 
+
+
+    <div class="title_div_1 tt_chd_div_4" id="hoatdong">
+        <b class="title_txt_1 tt_chd_txt_4">CÁC HOẠT ĐỘNG-HÌNH ẢNH</b>
+    </div>    
+
+    <div id="chd_div_id_1" class="chd_div chd_child_div_1" >
+        <b class="chd_txt chd_child_txt_1">Hoạt động nhà trường</b>
+        
+            <img class="chd_img chd_img_1_1" id="chd_id_img_1_1" src="anh/hdnt1.jpg">
+            <img class="chd_img chd_img_1_2" id="chd_id_img_1_2" src="anh/hdnt2.jpg">
+            <img class="chd_img chd_img_1_3" id="chd_id_img_1_3" src="anh/hdnt3.jpg">
+            <img class="chd_img chd_img_1_4" id="chd_id_img_1_4" src="anh/Tuyendung2.jpg">
+            <img class="chd_img chd_img_1_5" id="chd_id_img_1_5" src="anh/school_icon.jpg">
+            <img class="chd_img chd_img_1_6" id="chd_id_img_1_6" src="anh/school_icon.jpg">
+
+        
+        
+            <img hidden class="chd_img chd_img_1_7" id="chd_id_img_1_7"src="anh/hdnt1.jpg">
+            <div hidden class="chd_img chd_img_1_7" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_7_1"><a>Hoạt động giao lưu hàn quốc học</a></div>
+            
+            <img hidden class="chd_img chd_img_1_8" id="chd_id_img_1_8"src="anh/hdnt2.jpg">
+            <div hidden class="chd_img chd_img_1_8" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_8_1">Lễ trao thưởng cho đội thắng hội thao SS20</div>
+            
+            <img hidden class="chd_img chd_img_1_9" id="chd_id_img_1_9"src="anh/hdnt3.jpg">
+            <div hidden class="chd_img chd_img_1_9" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_9_1">Ngày hội việc làm 2022</div>
+            
+            <img hidden class="chd_img chd_img_1_10" id="chd_id_img_1_10"src="anh/Tuyendung2.jpg">
+            <div hidden class="chd_img chd_img_1_10" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_10_1">123</div>
+            
+            <img hidden class="chd_img chd_img_1_11" id="chd_id_img_1_11"src="anh/school_icon.jpg">
+            <div hidden class="chd_img chd_img_1_11" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_11_1">123</div>
+            
+            <img hidden class="chd_img chd_img_1_12" id="chd_id_img_1_12"src="anh/school_icon.jpg">
+            <div hidden class="chd_img chd_img_1_12" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_1_12_1">123</div>
+  
+    </div>
+    <div hidden class="thugon_div thugon_chd_1" id="thugon_id_1">
+        <b class="thugon_txt thugon_txt_1">Thu gọn</b>
+    </div>
+
+    <div id="chd_div_id_2" class="chd_div chd_child_div_2">
+        <b class="chd_txt chd_child_txt_2">Hoạt động sinh viên</b>
+        <img class="chd_img chd_img_2_1" id="chd_id_img_2_1" src="anh/hdsv1.jpg">
+        <img class="chd_img chd_img_2_2" id="chd_id_img_2_2" src="anh/hdsv2.jpg">
+        <img class="chd_img chd_img_2_3" id="chd_id_img_2_3" src="anh/hdsv3.jpg">
+        <img class="chd_img chd_img_2_4" id="chd_id_img_2_4" src="anh/Tuyendung2.jpg">
+        <img class="chd_img chd_img_2_5" id="chd_id_img_2_5" src="anh/school_icon.jpg">
+        <img class="chd_img chd_img_2_6" id="chd_id_img_2_6" src="anh/school_icon.jpg">
+
+        <img hidden class="chd_img chd_img_1_7" id="chd_id_img_2_7"src="anh/hdsv1.jpg">
+        <div hidden class="chd_img chd_img_1_7" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_7_1"><a>Hoạt động của sinh viên tại phòng Gym sau dịch</a></div>
+        
+        <img hidden class="chd_img chd_img_1_8" id="chd_id_img_2_8"src="anh/hdsv2.jpg">
+        <div hidden class="chd_img chd_img_1_8" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_8_1"><a>Hoạt động giao lưu của sinh viên ngành kĩ thuật</a></div>
+        
+        <img hidden class="chd_img chd_img_1_9" id="chd_id_img_2_9"src="anh/hdsv3.jpg">
+        <div hidden class="chd_img chd_img_1_9" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_9_1"><a>Hoạt động giao lưu giữa các đơn vị trường của sinh viên ngành công nghệ thực phẩm</a></div>
+        
+        <img hidden class="chd_img chd_img_1_10" id="chd_id_img_2_10"src="anh/Tuyendung2.jpg">
+        <div hidden class="chd_img chd_img_1_10" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_10_1"><a>Hoạt động giao lưu hàn quốc học</a></div>
+        
+        <img hidden class="chd_img chd_img_1_11" id="chd_id_img_2_11"src="anh/school_icon.jpg">
+        <div hidden class="chd_img chd_img_1_11" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_11_1"><a>Hoạt động giao lưu hàn quốc học</a></div>
+
+        <img hidden class="chd_img chd_img_1_12" id="chd_id_img_2_12"src="anh/school_icon.jpg">
+        <div hidden class="chd_img chd_img_1_12" style="background-color: rgba(83, 82, 82, 0.623); color: white; text-align: center;" id="chd_id_img_2_12_1"><a>Hoạt động giao lưu hàn quốc học</a></div>
+    </div>
+    <div hidden class="thugon_div thugon_chd_2" id="thugon_id_2">
+        <b class="thugon_txt thugon_txt_1">Thu gọn</b>
+    </div>
+
+    <div class="chd_div chd_child_div_3" id="chd_div_id_3">
+        <b class="chd_txt chd_child_txt_3">Hoạt động câu lạc bộ</b>
+        <img class="chd_img chd_img_3_1" src="anh/Tuyendung2.jpg">
+        <img class="chd_img chd_img_3_2" src="anh/school_icon.jpg">
+        <img class="chd_img chd_img_3_3" src="anh/school_icon.jpg">
+        <img class="chd_img chd_img_3_4" src="anh/Tuyendung2.jpg">
+        <img class="chd_img chd_img_3_5" src="anh/school_icon.jpg">
+        <img class="chd_img chd_img_3_6" src="anh/school_icon.jpg">
+    </div>
+    <div class="chia">
+    </div>
+    <div class="rate-div">
+        <img class="rate rt-1" src="anh/sao.png">
+        <p class="rate-txt rt-1-txt">Xếp hạng 5 sao QS cho chất lượng đào tạo đại học</p>
+
+        <img class="rate rt-2" src="anh/totnghiep.png">
+        <p class="rate-txt rt-2-txt">95% sinh viên W2S nhận được lời mời làm việc toàn thời gian sau khi tốt nghiệp 1 năm</p>
+
+        <img class="rate rt-3" src="anh/chuan.png">
+        <p class="rate-txt rt-3-txt">Nền giáo dục đạt chuẩn quốc tế</p>
+
+        <img class="rate rt-4" src="anh/top.png">
+        <p class="rate-txt rt-4-txt">Top 275 các trường đại học tốt nhất toàn cầu</p>
+
+        <div class="more">
+            <a href="404.html" class="more-txt">Xem thêm các danh hiệu khác</a>
+            
+        </div>
+        
+    </div>
+
+    <div class="mapp" id="map_id">
+        <iframe id="gg" class="googlemap" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1164.5207648722758!2d106.90614498073705!3d10.965988259490164!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1649140708585!5m2!1svi!2s" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img id="cs-id" class="cs" src="anh/cs.jpg">
+        <div hidden class="csc" id="csc-id">
+            <a href="404.html" class="csc-txt">Trụ sở chính</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(
+            function(){
+                $('#cs-id').mouseenter(
+                    function(){
+                        $('#csc-id').show();
+                    }
+                );
+                
+                $('#csc-id').mouseleave(
+                    function(){
+                        $('#csc-id').hide();
+                    }
+                )  
+            }
+        )
+    </script>
+
+
+    <div class="doanhnghiep_div" id="doanhnghiep" style="z-index: -1;">
+        <div class="title_div_1 tt_chd_div_5">
+            <b class="title_txt_1 tt_chd_txt_5">CÁC DOANH NGHIỆP ĐỒNG HÀNH</b>
+        </div>
+        <img class="doanhnghiep_img dn_chd_1" src="anh/viettel.png">
+        <img class="doanhnghiep_img dn_chd_2" src="anh/taya.png">
+        <img class="doanhnghiep_img dn_chd_3" src="anh/Logo-TTC-travel-moi(1).jpg">
+        <img class="doanhnghiep_img dn_chd_4" src="anh/longbinh.png">
+    </div>
+    <div id="footter" class="foot_hompage">
+        <b class="pnbr pbn0">© 2022 The W2S University</b>
+        <a class="pnbr pbn1">Phạm Quyết Thắng</a>
+        <a class="pnbr pbn2">Nguyễn Duy Quyết</a>
+        <a class="pnbr pbn3">Phone number: +9022.333.333</a>
+        <a class="pnbr pbn4">Fax number: 012323262</a>
+        <a class="pnbr pbn5">Address: 12/3/21-Đường Phùng Khắc Khoan<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                P.Tân Hoà-TP.Biên Hoà-T.Đồng Nai</a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-chart-bar'> &nbsp10</i></a>
+        <a><i style="float: right; margin-right:100px;margin-top:23px" class='fas fa-folder-open'> &nbsp1,860</i></a>
+        <img class="fter ic-ft" src="anh/icon.png">
+        <b class="where homepage">Hompage</b>
+
+        <div class="about about-1">
+            <b style="font-size: 0.5cm;">About The W2S</b><br><br>
+            <a>Giới thiệu</a><br>
+            <a>Tin tức</a><br>
+            <a>Chương trình học tập</a><br>
+        </div>
+
+        <div class="about about-2">
+            <b style="font-size: 0.5cm;">Students</b><br><br>
+            <a>Học sinh tiêu biểu</a><br>
+            <a href="kqht.html">Kết quả học tập</a><br>
+        </div>
+
+        <div class="about about-3">
+            <b style="font-size: 0.5cm;">Admissions-Jobs</b><br><br>
+            <a href="tuyensinh.html">Tuyển sinh</a><br>
+            <a href="Tuyendung1.html">Tuyển dụng</a><br>
+        </div>
+
+        <div class="about about-4">
+            <b style="font-size: 0.5cm;">Rate-Contact</b><br><br>
+            <a href="thamdoykien.html">Thăm dò ý kiến</a><br>
+            <a href="Lienhe.html">Liên hệ</a><br>
+        </div>
+
+        <div id="cnt_1" class="fab fa-facebook-square">
+            <div  id="fb" class="cnt facebook">Bunnie30102</div>
+            <div  id="mn1" class="muinhon mn_1"></div>
+        </div> 
+
+        <div id="cnt_2" class="fab fa-instagram">
+
+            <div  id="ig" class="cnt instagram">bunnie.30102</div>
+            <div  id="mn2" class="muinhon mn_2"></div>
+        </div>
+
+        <div id="cnt_3" class="fab fa-twitter">
+
+            <div  id="tw" class="cnt twitter">Twitter</div>
+            <div  id="mn3" class="muinhon mn_3"></div>
+        </div>
+        
+        <div id="cnt_4" class="fab fa-linkedin">
+
+            <div  id="li" class="cnt linkedin">Linked-In</div>
+            <div  id="mn4" class="muinhon mn_4"></div>
+        </div>
+
+        <div id="cnt_5" class="fab fa-google-plus-g">
+
+            <div  id="gp" class="cnt googleplus">thangpham30102002@gmail.com</div>
+            <div  id="mn5" class="muinhon mn_5"></div>
+        </div>
+
+        <div id="cnt_6" class="fab fa-github">
+
+            <div  id="ghub" class="cnt github">GitHub</div>
+            <div  id="mn6" class="muinhon mn_6"></div>
+        </div>  
+        <script>
+            $(function(){
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 5450){          //cuộn chuột đến vị trí outset thì thực hiện 
+                        $('#cnt_1').show();
+                        $('#cnt_2').show();
+                        $('#cnt_3').show();
+                        $('#cnt_4').show();
+                        $('#cnt_5').show();
+                        $('#cnt_6').show();
+                    }
+                    else{
+                        $('#cnt_1').hide();
+                        $('#cnt_2').hide();
+                        $('#cnt_3').hide();
+                        $('#cnt_4').hide();
+                        $('#cnt_5').hide();
+                        $('#cnt_6').hide();
+                    }                  
+                });
+            });
+        </script>
+        
+ <!--       <script>
+            $(document).ready(
+                function(){
+            /*show*/            
+                    $('#cnt_1').mouseenter(
+                        function(){
+                            $('#fb').show(0);$('#mn1').show(0);
+                        }
+                    );
+                   
+                    $('#cnt_2').mouseenter(
+                        function(){
+                            $('#ig').show(0);$('#mn2').show(0);
+                        }
+                    );
+      
+                    $('#cnt_3').mouseenter(
+                        function(){
+                            $('#tw').show(0);$('#mn3').show(0);
+                        }
+                    );
+
+                    $('#cnt_4').mouseenter(
+                        function(){
+                            $('#li').show(0);$('#mn4').show(0);
+                        }
+                    );
+
+                    $('#cnt_5').hover(
+                        function(){
+                            $('#gp').show(0);$('#mn5').show(0);
+                        }
+                    );
+
+                    $('#cnt_6').hover(
+                        function(){
+                            $('#ghub').show(0);$('#mn6').show(0);
+                        }
+                    );
+
+            /*hide*/
+                    $('#cnt_1').mouseleave(
+                        function(){
+                            $('#fb').hide(00); $('#mn1').hide(00);
+                        }
+                    );
+
+                    $('#cnt_2').mouseleave(
+                        function(){
+                            $('#ig').hide(0);$('#mn2').hide(00);
+                        }
+                    );
+
+                    $('#cnt_3').mouseleave(
+                        function(){
+                            $('#tw').hide(0);$('#mn3').hide(00);
+                        }
+                    );
+
+                    $('#cnt_4').mouseleave(
+                        function(){
+                            $('#li').hide(0);$('#mn4').hide(00);
+                        }
+                    );
+
+                    $('#cnt_5').mouseleave(
+                        function(){
+                            $('#gp').hide(0);$('#mn5').hide(00);
+                        }
+                    );
+
+                    $('#cnt_6').mouseleave(
+                        function(){
+                            $('#ghub').hide(0);$('#mn6').hide(0);
+                        }
+                    );
+
+
+                    $('footter').mouseleave(
+                        function(){
+                            $('#tintuc').hide(0);
+                            $('#hstb').hide(0);
+                            $('#kqht').hide(0);
+                            $('#tuyendung').hide(0);
+                            $('#lienhe').hide(0);
+                            $('#div_menu').hide(300);
+                            $('#img_menu_hide').hide(0);
+                        }
+                    );
+                }
+            )    
+        </script>-->
+    </div>
+</body>
+
